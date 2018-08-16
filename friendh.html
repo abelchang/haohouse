@@ -1,0 +1,612 @@
+<!DOCTYPE HTML>
+<html prefix="og: http://ogp.me/ns#">
+	<head>
+		<title>遊好花蓮</title>
+		<meta property="og:title" content="遊好花蓮" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="http://www.haohouse1939.com/friendh.html" />
+		<meta property="og:image" content="http://www.haohouse1939.com/images/friendh.jpg" />
+		<meta property="og:image:width" content="476"/>
+		
+		<meta property="og:description" content="帶你走進花蓮，體驗這土地上的用心與溫暖！" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="images/Icon-72@2x.png" rel="apple-touch-icon" />
+		
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-78584224-1', 'auto');
+		ga('require', 'linkid');
+		ga('send', 'pageview');
+		</script>
+		<script type="text/javascript">
+			var getAuthUrl = "https://api.instagram.com/oauth/authorize/?client_id=	13dd40fdb10540d1958d966243bea99b&redirect_uri=http://www.haohouse1939.com/friendh.html&response_type=token"
+
+
+				function authFunc(){
+				  var win = window.open(getAuthUrl, "auth_window");
+				}
+
+				var accessToken = window.location.hash.replace('#','?')
+				console.log(accessToken);
+
+
+				var xhr = new XMLHttpRequest();
+
+				xhr.addEventListener("readystatechange", function () {
+				  if (this.readyState === 4) {
+				    var response = JSON.parse(this.responseText)
+				    console.log(response);
+				    response.data.map(function(item){
+
+				      var img = document.createElement('img');
+				     img.src =  item.images.low_resolution.url; document.querySelector(".container").appendChild(img);
+				     
+				    })
+				  }
+				});
+
+				xhr.open("GET", "https://api.instagram.com/v1/users/self/media/recent/"+accessToken);
+
+				xhr.send();
+
+
+
+		</script>
+	</head>
+	<body >
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Header -->
+			<header id="header">
+				<a href="index.html"><img src="images/logoText.PNG" alt="花蓮好書室"></a>
+				<nav class="links">
+					<ul>
+						<!-- <li><a href="friendh.html">最新消息</a></li> -->
+						<li><a href="index.html">關於好書室</a></li>
+						<li><a href="rooms.html">選間好書室</a></li>
+						<li><a href="policy.html">住宿問與答</a></li>
+						<li><a href="order.html">訂房資訊</a></li>
+						<li><a href="findUS.html">找到我們</a></li>
+					</ul>
+				</nav>
+				<nav class="main">
+					<ul>
+						<li class="menu">
+							<a class="fa-bars" href="#menu">Menu</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<!-- Menu -->
+			<section id="menu">
+				<!-- Search -->
+				<section id="intro">
+					<header>
+						<a href="index.html" class="logo"><img src="images/logoText.PNG" alt="花蓮好書室" /></a>
+					</header>
+				</section>
+				<!-- Links -->
+				<section>
+					<ul class="links">
+						<!-- <li><a href="friendh.html"><h3>最新消息</h3></a></li> -->
+						<li>
+							<a href="index.html">
+								<h3>關於好書室</h3>
+							</a>
+						</li>
+						<li>
+							<a href="rooms.html">
+								<h3>選間好書室</h3>
+							</a>
+							<a href="single.html" style="margin-left: 1em;"><p>單單</p></a>
+							<a href="yore.html" style="margin-left: 1em;"><p>昔時</p></a>
+							<a href="whiteWood.html" style="margin-left: 1em;"><p>白木</p></a>
+							<a href="days.html" style="margin-left: 1em;"><p>日常</p></a>
+						</li>
+						<li>
+							<a href="policy.html">
+								<h3>住宿問與答</h3>
+							</a>
+						</li>
+						<li>
+							<a href="order.html">
+								<h3>訂房資訊</h3>
+							</a>
+						</li>
+						<li>
+							<a href="findUS.html">
+								<h3>找到我們</h3>
+							</a>
+						</li>
+					</ul>
+				</section>
+				<!-- Actions -->
+				<section>
+					<ul class="icons">
+						<li><a href="https://www.facebook.com/haohouse1939/" target="_blank" class="fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://instagram.com/haohouse1939" target="_blank" class="fa-instagram"><span class="label">Instagram</span></a></li>
+						<!-- <li><a href="mailto:haohouse1939@gmail.com" target="_blank" class="fa-envelope"><span class="label">Email</span></a></li> -->
+						<li><a href="tel:+886930106882" target="_blank" class="fa-phone"><span class="label">Mobile</span></a></li>
+						<li><a href="https://goo.gl/maps/R2X6fZ3AyWs" target="_blank" class="fa-map-marker"><span class="label">localtion</span></a></li>
+					</ul>
+				</section>
+			</section>
+			<!-- Main -->
+			<div id="main">
+				<article class="post">
+					<button class="authorize" onClick="authFunc()">Authorize</button>
+					<div class="container"></div>
+				</article>
+				<article class="post">
+					<div style="position: relative; height: 16px; width: 100%; overflow: hidden; padding-top:100%;"><iframe src="//widgets-code.websta.me/w/d2fc0290adc5?ck=MjAxOC0wNC0zMFQxNToyMzoyOC4wMDBa" class="websta-widgets" allowtransparency="true" frameborder="0" scrolling="no" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe> <!-- WEBSTA WIDGETS - widgets.websta.me --></div>
+				</article>
+				<article class="post">
+					<header>
+						<div class="title">
+							<h2><a href="#">遊好花蓮</a></h2>
+							<p>走進花蓮，感受這土地的溫度與用心</p>
+						</div>
+					</header>
+					<section class="">
+						<div class="align-center">
+							<p>
+								這片土地上，有很多認真用心的店家
+							</p>
+							<p>
+								我們希望試著提供自己的抵用卷，做為更直接的媒介，邀請你走入巷弄一家店～
+							</p>
+							<p>
+								悠哉的用一餐、細細的喝杯咖啡吃個點心
+							</p>
+							<p>
+								或是走進書店選本書帶回家、從選物小店帶走這裡特別的溫度
+							</p>
+							<p>
+								又或是來趟體驗七星潭、日出賞鯨之旅
+							</p>
+							<p>
+								所以我們邀請了以下友好的店家
+							</p>
+							<p>
+								一起參與你的遊好花蓮
+							</p>
+						</div>
+						<div class="box" style="background-color:#f4f4f4;">
+							<div class="policy">
+								<div class="title" >
+									<h2>
+									活動說明
+									</h2>
+								</div>
+								<div class="list">
+									<ul>
+										<li>
+											活動日期：3/15 ~ 3/31
+										</li>
+										<li>
+											訂房方式：請於臉書或是電話訂房
+										</li>
+										<li>
+											活動日期間入住花蓮好書室3天2夜以上，雙人房提供一張500元遊好花蓮消費抵用卷，四人房提供二張500元遊好花蓮消費抵用卷，可至友好店家消費使用。
+										</li>
+										<li>
+											此方案依舊會有續住折扣。
+										</li>
+										<li>
+											住宿期間不提供早餐，希望大家走入花蓮的特色店家，享受他們的用心與溫暖。
+										</li>
+										<li>
+											消費抵用卷可於住宿期間至友好店家使用，等同現金折抵，限單一店家使用完畢，恕不找零。
+										</li>
+									</ul>
+								</div>
+							</div>  
+						</div>
+						<div class="policy">
+							<div class="title" style="text-align:left">
+								<h2>
+									書店
+								</h2>
+							</div>
+							<div class="list">
+								<div class="row">
+									<div class="6u 12u(small)">
+										<h2>孩好書屋</h2>
+										<ul class="alt">
+											<li><span class="icon fa-home fa" style="margin-right: 0.5em;"></span><a href="https://goo.gl/maps/VAYwWCvFCF92" target="_blank" >970花蓮縣花蓮市民權路37-1號</a></li>
+											<li><span class="icon fa-calendar fa" style="margin-right: 0.5em;"></span>週四~週一 11：00-19：00     週二、週三公休</li>
+											<li><span class="icon fa-info-circle fa" style="margin-right: 0.5em;"></span><a href="http://goodforkids2016.weebly.com" target="_blank">官網連結</a></li>
+										</ul>
+									</div>
+									<div class="6u 12u(small)">
+										<h2>時光二手書店</h2>
+										<ul class="alt">
+											<li><span class="icon fa-home fa" style="margin-right: 0.5em;"></span><a href="https://goo.gl/maps/HkqnipfqPYP2" target="_blank">970花蓮縣花蓮市建國路8號</a></li>
+											<li><span class="icon fa-calendar fa" style="margin-right: 0.5em;"></span>週一~週日 13：00-22：00</li>
+											<li><span class="icon fa-info-circle fa" style="margin-right: 0.5em;"></span><a href="http://blog.roodo.com/bookslight" target="_blank">官網連結</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="policy">
+							<div class="title" style="text-align:left">
+								<h2>
+								 獨立咖啡與甜點
+								</h2>
+							</div>
+							<div class="list">
+								<div class="row">
+									<div class="6u 12u(small)">
+										<h2>KOHI宅</h2>
+										<ul class="alt">
+											<li><span class="icon fa-home fa" style="margin-right: 0.5em;"></span><a href="https://goo.gl/maps/QTjdzXNgTv72" target="_blank" >970花蓮縣花蓮市成功街298號</a></li>
+											<li><span class="icon fa-calendar fa" style="margin-right: 0.5em;"></span>週三~週一 14：00-22：00 週二公休</li>
+											<li><span class="icon fa-info-circle fa" style="margin-right: 0.5em;"></span><a href="https://www.facebook.com/kohi.rejidensu" target="_blank">官網連結</a></li>
+										</ul>
+									</div>
+									<div class="6u 12u(small)">
+										<h2>半寓咖啡</h2>
+										<ul class="alt">
+											<li><span class="icon fa-home fa" style="margin-right: 0.5em;"></span><a href="https://goo.gl/maps/mdqNzUBh71o" target="_blank">970花蓮縣花蓮市成功街316號</a></li>
+											<li><span class="icon fa-calendar fa" style="margin-right: 0.5em;"></span>週五~週二 14：00-20：00     週三、週四公休</li>
+											<li><span class="icon fa-info-circle fa" style="margin-right: 0.5em;"></span><a href="https://www.facebook.com/apartment.giocare/info?tab=page_info" target="_blank">官網連結</a></li>
+										</ul>
+									</div>
+									<div class="6u 12u(small)">
+										<h2>Caffe Fiore珈琲花</h2>
+										<ul class="alt">
+											<li><span class="icon fa-home fa" style="margin-right: 0.5em;"></span><a href="https://goo.gl/maps/hs2DhzGu4hN2" target="_blank" >970花蓮縣花蓮市忠孝街79號</a></li>
+											<li><span class="icon fa-calendar fa" style="margin-right: 0.5em;"></span>週四~週二 13：30-21：00 週三公休</li>
+											<li><span class="icon fa-info-circle fa" style="margin-right: 0.5em;"></span><a href="https://www.facebook.com/caffefiore2014/" target="_blank">官網連結</a></li>
+										</ul>
+									</div>
+									<div class="6u 12u(small)">
+										<h2>choco choco手工巧克力</h2>
+										<ul class="alt">
+											<li><span class="icon fa-home fa" style="margin-right: 0.5em;"></span><a href="https://goo.gl/maps/jNf6CaEFvCt" target="_blank" >970花蓮縣花蓮市忠孝街70號</a></li>
+											<li><span class="icon fa-calendar fa" style="margin-right: 0.5em;"></span>週三~週ㄧ 14：00-22：00 週二公休</li>
+											<li><span class="icon fa-info-circle fa" style="margin-right: 0.5em;"></span><a href="http://choco2.com.tw/" target="_blank">官網連結</a></li>
+										</ul>
+									</div>
+									<div class="6u 12u(small)">
+										<h2>Ngchus 晤子cafécake</h2>
+										<ul class="alt">
+											<li><span class="icon fa-home fa" style="margin-right: 0.5em;"></span><a href="https://goo.gl/maps/VXmGRzWj6Xq" target="_blank">970花蓮縣花蓮市建中街11號</a></li>
+											<li><span class="icon fa-calendar fa" style="margin-right: 0.5em;"></span>週二~週日 10：00-18：00     週一公休</li>
+											<li><span class="icon fa-info-circle fa" style="margin-right: 0.5em;"></span><a href="http://www.facebook.com/Ngchuscafe" target="_blank">官網連結</a></li>
+										</ul>
+									</div>
+									<div class="6u 12u(small)">
+										<h2>璞石咖啡館</h2>
+										<ul class="alt">
+											<li><span class="icon fa-home fa" style="margin-right: 0.5em;"></span><a href="https://goo.gl/maps/kKMZn2PuxzQ2" target="_blank" >970花蓮縣花蓮市明禮路8號</a></li>
+											<li><span class="icon fa-calendar fa" style="margin-right: 0.5em;"></span>週一~週日 07：30-18：00</li>
+											<li><span class="icon fa-info-circle fa" style="margin-right: 0.5em;"></span><a href="https://zh-tw.facebook.com/jadecafe" target="_blank">官網連結</a></li>
+										</ul>
+									</div>
+									<div class="6u 12u(small)">
+										<h2>浮室 soave plan</h2>
+										<ul class="alt">
+											<li><span class="icon fa-home fa" style="margin-right: 0.5em;"></span><a href="https://goo.gl/maps/JX4YxXFgKDr" target="_blank">970花蓮縣花蓮市成功街280號1樓</a></li>
+											<li><span class="icon fa-calendar fa" style="margin-right: 0.5em;"></span>週五~週三 13：00-21：00     週四公休</li>
+											<li><span class="icon fa-info-circle fa" style="margin-right: 0.5em;"></span><a href="http://www.facebook.com/soaveplan" target="_blank">官網連結</a></li>
+										</ul>
+									</div>
+									<div class="6u 12u(small)">
+										<h2>斗。宅商社Cafe&Bar</h2>
+										<ul class="alt">
+											<li><span class="icon fa-home fa" style="margin-right: 0.5em;"></span><a href="https://goo.gl/maps/hRd6HqToUBB2" target="_blank" >970花蓮縣花蓮市博愛街159巷7號</a></li>
+											<li><span class="icon fa-calendar fa" style="margin-right: 0.5em;"></span>週一~週日 12：00-21：00</li>
+											<li><span class="icon fa-info-circle fa" style="margin-right: 0.5em;"></span><a href="https://www.facebook.com/Shibainu159.7/" target="_blank">官網連結</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="policy">
+							<div class="title" style="text-align:left">
+								<h2>
+								 特色小店
+								</h2>
+							</div>
+							<div class="list">
+								<div class="row">
+									<div class="6u 12u(small)">
+										<h2>自食齊力</h2>
+										<ul class="alt">
+											<li><span class="icon fa-home fa" style="margin-right: 0.5em;"></span><a href="https://goo.gl/maps/pfcYLGNc6eB2" target="_blank">970花蓮縣花蓮市中華路269號</a></li>
+											<li><span class="icon fa-calendar fa" style="margin-right: 0.5em;"></span>週四~週一 15：00-21：00     週二、週三公休</li>
+											<li><span class="icon fa-info-circle fa" style="margin-right: 0.5em;"></span><a href="https://www.facebook.com/fromme100/" target="_blank">官網連結</a></li>
+										</ul>
+									</div>
+									<div class="6u 12u(small)">
+										<h2>小一點洋行</h2>
+										<ul class="alt">
+											<li><span class="icon fa-home fa" style="margin-right: 0.5em;"></span><a href="https://goo.gl/maps/vVqY8roKZq52" target="_blank">970花蓮縣花蓮市明禮路67巷1號</a></li>
+											<li><span class="icon fa-calendar fa" style="margin-right: 0.5em;"></span>週一~週日 10：00-18：00</li>
+											<li><span class="icon fa-info-circle fa" style="margin-right: 0.5em;"></span><a href="https://zh-tw.facebook.com/madehand/" target="_blank">官網連結</a></li>
+										</ul>
+									</div>
+									<div class="6u 12u(small)">
+										<h2>木沐</h2>
+										<ul class="alt">
+											<li><span class="icon fa-home fa" style="margin-right: 0.5em;"></span><a href="https://goo.gl/maps/9hzcGoy2KQS2" target="_blank">970花蓮縣花蓮市忠孝街68號</a></li>
+											<li><span class="icon fa-calendar fa" style="margin-right: 0.5em;"></span>週二~週六 10：00-18：00     週一、週日公休</li>
+											<li><span class="icon fa-info-circle fa" style="margin-right: 0.5em;"></span><a href="https://www.facebook.com/chihhwood/" target="_blank">官網連結</a></li>
+										</ul>
+									</div>
+									<div class="6u 12u(small)">
+										<h2>orip生活旅人工作室</h2>
+										<ul class="alt">
+											<li><span class="icon fa-home fa" style="margin-right: 0.5em;"></span><a href="https://goo.gl/maps/j5my6bFcZPz" target="_blank">970花蓮縣花蓮市節約街27號</a></li>
+											<li><span class="icon fa-calendar fa" style="margin-right: 0.5em;"></span>週一~週日 12：00-21：00</li>
+											<li><span class="icon fa-info-circle fa" style="margin-right: 0.5em;"></span><a href="http://orip.wordpress.com/" target="_blank">官網連結</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="policy">
+							<div class="title" style="text-align:left">
+								<h2>
+								 旅遊體驗
+								</h2>
+							</div>
+							<div class="list">
+								<div class="row">
+									<div class="6u 12u(small)">
+										<h2>多羅滿賞鯨</h2>
+										<ul class="alt">
+											<li><span class="icon fa-home fa" style="margin-right: 0.5em;"></span><a href="https://goo.gl/maps/oqwAfycnVZ92" target="_blank" >970花蓮縣花蓮市民權路37號</a></li>
+											<li><span class="icon fa-calendar fa" style="margin-right: 0.5em;"></span>週一~週日 07：00-19：00</li>
+											<li><span class="icon fa-info-circle fa" style="margin-right: 0.5em;"></span><a href="http://www.turumoan.com.tw/shop/" target="_blank">官網連結</a></li>
+										</ul>
+									</div>
+									<div class="6u 12u(small)">
+										<h2>洄遊吧</h2>
+										<ul class="alt">
+											<li><span class="icon fa-home fa" style="margin-right: 0.5em;"></span><a href="https://goo.gl/maps/x6oWQZtc5LG2" target="_blank" >97143花蓮縣新城鄉七星街56巷26號</a></li>
+											<li><span class="icon fa-calendar fa" style="margin-right: 0.5em;"></span>週一~週日 08：00-18：00</li>
+											<li><span class="icon fa-info-circle fa" style="margin-right: 0.5em;"></span><a href="http://www.fishbar.com.tw/" target="_blank">官網連結</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="policy">
+							<div class="title" style="text-align:left">
+								<h2>
+								 早午餐
+								</h2>
+							</div>
+							<div class="list">
+								<div class="row">
+									<div class="6u 12u(small)">
+										<h2>糧晨吉食</h2>
+										<ul class="alt">
+											<li><span class="icon fa-home fa" style="margin-right: 0.5em;"></span><a href="https://goo.gl/maps/ePENbjPfKSm" target="_blank">970花蓮縣花蓮市林森路201巷26號</a></li>
+											<li><span class="icon fa-calendar fa" style="margin-right: 0.5em;"></span>週四~週一 09：00-14：00     週二、週三公休</li>
+											<li><span class="icon fa-info-circle fa" style="margin-right: 0.5em;"></span><a href="https://www.facebook.com/goodfoodrice/" target="_blank">官網連結</a></li>
+										</ul>
+									</div>
+									<div class="6u 12u(small)">
+										<h2>時光1939</h2>
+										<ul class="alt">
+											<li><span class="icon fa-home fa" style="margin-right: 0.5em;"></span><a href="https://goo.gl/maps/Q9Ke8XdmCGm" target="_blank">970花蓮縣花蓮市民國路80巷16號</a></li>
+											<li><span class="icon fa-calendar fa" style="margin-right: 0.5em;"></span>週五~週三 09：00-17：00 週四公休</li>
+											<li><span class="icon fa-info-circle fa" style="margin-right: 0.5em;"></span><a href="https://www.facebook.com/timelight1939/" target="_blank">官網連結</a></li>
+										</ul>
+									</div>
+									<div class="6u 12u(small)">
+										<h2>Hygge</h2>
+										<ul class="alt">
+											<li><span class="icon fa-home fa" style="margin-right: 0.5em;"></span><a href="https://goo.gl/maps/P2qncQ1f4Qt" target="_blank">970花蓮縣花蓮市林森路315巷71號</a></li>
+											<li><span class="icon fa-calendar fa" style="margin-right: 0.5em;"></span>週一~週日 09：30-17：30</li>
+											<li><span class="icon fa-info-circle fa" style="margin-right: 0.5em;"></span><a href="https://www.facebook.com/hyggee/" target="_blank">官網連結</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>					
+						<div class="policy">
+							<div class="title" style="text-align:left">
+								<h2>
+								 正餐
+								</h2>
+							</div>
+							<div class="list">
+								<div class="row">
+									<div class="6u 12u(small)">
+										<h2>5+商行</h2>
+										<ul class="alt">
+											<li><span class="icon fa-home fa" style="margin-right: 0.5em;"></span><a href="https://goo.gl/maps/GyY3y3uNAps" target="_blank">970花蓮縣花蓮市建國路75巷16弄6號</a></li>
+											<li><span class="icon fa-calendar fa" style="margin-right: 0.5em;"></span>不定期公休，請參閱粉絲團</li>
+											<li><span class="icon fa-info-circle fa" style="margin-right: 0.5em;"></span><a href="https://www.facebook.com/love5home/" target="_blank">官網連結</a></li>
+										</ul>
+									</div>
+									<div class="6u 12u(small)">
+										<h2>CUME咖哩</h2>
+										<ul class="alt">
+											<li><span class="icon fa-home fa" style="margin-right: 0.5em;"></span><a href="https://goo.gl/maps/EYjq2XEGLwn" target="_blank">970花蓮縣花蓮市林政街8巷3弄2號</a></li>
+											<li><span class="icon fa-calendar fa" style="margin-right: 0.5em;"></span>11:00-14:00\17:00-20:00 週三、四公休</li>
+											<li><span class="icon fa-info-circle fa" style="margin-right: 0.5em;"></span><a href="https://zh-tw.facebook.com/CUME832/" target="_blank">官網連結</a></li>
+										</ul>
+									</div>
+									<div class="6u 12u(small)">
+										<h2>匠心食堂</h2>
+										<ul class="alt">
+											<li><span class="icon fa-home fa" style="margin-right: 0.5em;"></span><a href="https://goo.gl/maps/bDtFXkCgfdq" target="_blank">970花蓮縣花蓮市明禮路12號</a></li>
+											<li><span class="icon fa-calendar fa" style="margin-right: 0.5em;"></span>11:30-13:45\17:15-19:45 週日、一公休</li>
+											<li><span class="icon fa-info-circle fa" style="margin-right: 0.5em;"></span><a href="https://www.facebook.com/syousin" target="_blank">官網連結</a></li>
+										</ul>
+									</div>
+									<div class="6u 12u(small)">
+										<h2>曲皿</h2>
+										<ul class="alt">
+											<li><span class="icon fa-home fa" style="margin-right: 0.5em;"></span><a href="https://goo.gl/maps/n6Bf1thFLNx" target="_blank">970花蓮縣花蓮市中和街214巷12-1號</a></li>
+											<li><span class="icon fa-calendar fa" style="margin-right: 0.5em;"></span>12:00-14:00\17:30-20:00 週一、四公休</li>
+											<li><span class="icon fa-info-circle fa" style="margin-right: 0.5em;"></span><a href="http://singingbowl.strikingly.com" target="_blank">官網連結</a></li>
+										</ul>
+									</div>
+									<div class="6u 12u(small)">
+										<h2>來打餃 日式煎餃</h2>
+										<ul class="alt">
+											<li><span class="icon fa-home fa" style="margin-right: 0.5em;"></span><a href="https://goo.gl/maps/f8YfCoF4eTN2" target="_blank"> 970花蓮縣花蓮市博愛街159巷8號</a></li>
+											<li><span class="icon fa-calendar fa" style="margin-right: 0.5em;"></span>不定期公休，請參閱粉絲團</li>
+											<li><span class="icon fa-info-circle fa" style="margin-right: 0.5em;"></span><a href="https://www.facebook.com/%E4%BE%86%E6%89%93%E9%A4%83-189333044988448/" target="_blank">官網連結</a></li>
+										</ul>
+									</div>
+									<div class="6u 12u(small)">
+										<h2>老滷十三香</h2>
+										<ul class="alt">
+											<li><span class="icon fa-home fa" style="margin-right: 0.5em;"></span><a href="https://goo.gl/maps/y4BWYh9FpVL2" target="_blank">970花蓮縣花蓮市博愛街159巷12號</a></li>
+											<li><span class="icon fa-calendar fa" style="margin-right: 0.5em;"></span>11:00-14:00\17:00-20:00</li>
+											<li><span class="icon fa-info-circle fa" style="margin-right: 0.5em;"></span><a href="https://www.facebook.com/gobackmyhome/?ref=py_c" target="_blank">官網連結</a></li>
+										</ul>
+									</div>
+									<div class="6u 12u(small)">
+										<h2>在隱巷</h2>
+										<ul class="alt">
+											<li><span class="icon fa-home fa" style="margin-right: 0.5em;"></span><a href="https://goo.gl/maps/8B4se4JWF712" target="_blank">970花蓮縣花蓮市博愛街159巷6號</a></li>
+											<li><span class="icon fa-calendar fa" style="margin-right: 0.5em;"></span>不定期公休，請參閱粉絲團</li>
+											<li><span class="icon fa-info-circle fa" style="margin-right: 0.5em;"></span><a href="https://www.facebook.com/%E5%9C%A8%E9%9A%B1%E5%B7%B7%E6%89%8B%E5%B7%A5%E9%BA%B5%E5%8C%85%E9%A4%85%E4%B9%BE%E8%BC%95%E9%A3%9F%E7%BE%A9%E5%A4%A7%E5%88%A9%E9%BA%B5-428258587608446/" target="_blank">官網連結</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="googlemap">
+							<iframe src="https://www.google.com/maps/d/u/1/embed?mid=1XmKz699tvWQzO9m_DakOsqT_dQbaF3JH" width="640" height="480"></iframe>
+						</div>
+						<div class="row">
+							<div class="6u 12u(small)">
+								<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BgQ7iuXAhec/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BgQ7iuXAhec/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">這片土地上，有很多認真用心的店家，我們希望試著提供自己的抵用卷，做為更直接的媒介，邀請你走入巷弄一家店～ 悠哉的用一餐、細細的喝杯咖啡吃個點心，或是走進書店選本書帶回家、從選物小店帶走這裡特別的溫度，又或是來趟體驗七星潭、日出賞鯨之旅。 所以我們邀請了以下友好的店家 一起參與你的遊好花蓮 書店 #孩好書屋 #時光二手書店 早午餐 #時光1939 #糧晨吉食 獨立咖啡飲品與甜點 #KŌHI宅 #半寓咖啡 #chocochoco手工巧克力 #晤子咖啡Ngchuscafé cake #璞石咖啡館 #浮室 #斗宅商社 正餐 #5+商行 #CUME咖哩 #匠心 #來打餃 #老滷十三香 #在隱巷 特色小店 #自食齊力 #小一點洋行 #Orip #木沐 旅遊體驗 #洄遊吧 #多羅滿賞鯨 —— 遊好花蓮方案 3/15 -3/31 私訊訂好書室住宿三天兩夜 雙人房提供500元消費抵用卷*1 四人房提供500元消費抵用卷*2 每張僅能折抵一次 不找零 上限500元 可於上述友好店家使用喔！ 想知道更詳細的遊好花蓮 可以點這裡瞭解更多 http://www.haohouse1939.com/friendh.html —— 希望我們的喜歡，也能成為你們的喜歡💕</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/haohouse1939/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> 花蓮好書室</a>（@haohouse1939）分享的貼文 於 <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2018-03-13T13:09:00+00:00">PDT 2018 年 3月 月 13 日 6:09 上午</time> 張貼</p></div></blockquote> <script async defer src="//www.instagram.com/embed.js"></script>
+								
+							</div>
+
+							<div class="6u 12u(small)">
+								<div class="fb-post" data-href="https://www.facebook.com/haohouse1939/posts/782646071930138" data-width="" data-show-text="true"><blockquote cite="https://www.facebook.com/haohouse1939/posts/782646071930138" class="fb-xfbml-parse-ignore"><p>邀你們來遊，好花蓮！
+
+——
+一開始，是因為政府3355花蓮旅宿方案，我們研究以後發現它對於所謂的「花蓮觀光」現況沒有幫助，因此，我們沒有參加。
+👇葉宿文旅說得好好，更深入了解👇
+https://goo.gl/ZePBwS
+
+但3355引起...</p>由<a href="https://www.facebook.com/haohouse1939/">花蓮。好書室</a>貼上了&nbsp;<a href="https://www.facebook.com/haohouse1939/posts/782646071930138">2018年3月13日</a></blockquote></div>
+							</div>
+							
+								
+						</div>
+						
+					</section>
+				</article>
+			</div>
+			<!-- Sidebar -->
+			<section id="sidebar">
+				<!-- Intro -->
+				<section id="intro">
+					<a href="index.html" class="logo"><img src="images/logoImage.PNG" alt="花蓮好書室" /></a>
+				</section>
+				<!-- Mini Posts -->
+				<section>
+					<div class="mini-posts">
+						<!-- Mini Post -->
+						<article class="mini-post">
+							<header>
+								<h3><a href="single.html">單單</a></h3>
+								<p>一人一床，翻身不打擾</p>
+								<a href="single.html" class="author"><img src="images/single/single-sign.jpg" alt="屁股" /></a>
+							</header>
+							<a href="single.html" class="image"><img src="images/single/single-2.jpg" alt="極簡設計風格民宿房間" /></a>
+						</article>
+						<!-- Mini Post -->
+						<article class="mini-post">
+							<header>
+								<h3><a href="yore.html">昔時</a></h3>
+								<p>想起昔日，旅行時光</p>
+								<a href="yore.html" class="author"><img src="images/yore/yore-sign.jpg" alt="屁股" /></a>
+							</header>
+							<a href="yore.html" class="image"><img src="images/yore/yore-3.jpg" alt="極簡設計風格民宿房間" /></a>
+						</article>
+						<!-- Mini Post -->
+						<article class="mini-post">
+							<header>
+								<h3><a href="whiteWood.html">白木</a></h3>
+								<p>寧靜白色，沈靜木沐</p>
+								<a href="whiteWood.html" class="author"><img src="images/whiteWood/whiteWood-sign.jpg" alt="屁股" /></a>
+							</header>
+							<a href="whiteWood.html" class="image"><img src="images/whiteWood/whiteWood-1.jpg" alt="極簡設計風格民宿房間" /></a>
+						</article>
+						<!-- Mini Post -->
+						<article class="mini-post">
+							<header>
+								<h3><a href="days.html">日常</a></h3>
+								<p>四人齊聚，日常生活</p>
+								<a href="days.html" class="author"><img src="images/days/days-sign.jpg" alt="屁股" /></a>
+							</header>
+							<a href="days.html" class="image"><img src="images/days/days-1.jpg" alt="極簡設計風格民宿房間" /></a>
+						</article>
+						<!-- Mini Post -->
+						<article class="mini-post">
+							<header>
+								<h3><a href="days.html">好書室 全景</a></h3>
+								<p>探訪花蓮好書室</p>
+							</header>
+							<div class="googlemap">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1szh-TW!2stw!4v1488720192203!6m8!1m7!1sdJMpHMccy5cAAAQvxYMYLQ!2m2!1d23.98022430255352!2d121.5951780413628!3f300.15875738510874!4f-5.909474215633097!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div> 
+						</article>
+					</div>
+				</section>
+				
+				<!-- About -->
+				<section class="blurb">
+					<h2>關於好書室</h2>
+					<p>
+						旅行，是去他人的日常生活中，找到迷失的自己。<br>
+						好書室，在花蓮市遠東百貨旁的靜巷，準備了好床與寧靜的空間，做為基地，希望給你的旅程帶來靜心、自在與回歸。
+						<br>單純清透，好舒適，好放鬆。
+					</p>
+				</section>
+				<!-- Footer -->
+				<section id="footer">
+					<ul class="icons">
+						<li><a href="https://www.facebook.com/haohouse1939/" target="_blank" class="fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://instagram.com/haohouse1939" target="_blank" class="fa-instagram"><span class="label">Instagram</span></a></li>
+						<!-- <li><a href="mailto:haohouse1939@gmail.com" target="_blank" class="fa-envelope"><span class="label">Email</span></a></li> -->
+						<li><a href="tel:+886918624807" target="_blank" class="fa-phone"><span class="label">Mobile</span></a></li>
+						<li><a href="https://goo.gl/maps/R2X6fZ3AyWs" target="_blank" class="fa-map-marker"><span class="label">localtion</span></a></li>
+						<li><a href="https://line.me/R/ti/p/%40xho8040s" style="text-decoration: none;
+						border-bottom: none;" target="_blank"><img height="20" border="0" alt="加入好友" src="http://biz.line.naver.jp/line_business/img/btn/addfriends_zh-Hant.png" style="margin-bottom: -6px;"></a></li>
+					</ul>
+					<p class="copyright">&copy; 好書室. Design: <a href="https://www.facebook.com/profile.php?id=1795762028">Abel</a>. Images: <a href="https://www.instagram.com/ccabel42/?hl=zh-tw">Abel</a>.</p>
+				</section>
+			</section>
+		</div>
+		<!-- Scripts -->
+		<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>

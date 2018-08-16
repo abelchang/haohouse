@@ -1,0 +1,1274 @@
+<!DOCTYPE HTML>
+<html prefix="og: http://ogp.me/ns#">
+	<head>
+		<title>2018親子單車環島</title>
+		<meta property="og:title" content="遊好花蓮" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="http://www.haohouse1939.com/friendh.html" />
+		<meta property="og:image" content="http://www.haohouse1939.com/images/friendh.jpg" />
+		<meta property="og:image:width" content="476"/>
+		
+		<meta property="og:description" content="帶你走進花蓮，體驗這土地上的用心與溫暖！" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="images/Icon-72@2x.png" rel="apple-touch-icon" />
+		
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-78584224-1', 'auto');
+		ga('require', 'linkid');
+		ga('send', 'pageview');
+		</script>
+		<script type="text/javascript">
+			var getAuthUrl = "https://api.instagram.com/oauth/authorize/?client_id=	13dd40fdb10540d1958d966243bea99b&redirect_uri=http://www.haohouse1939.com/friendh.html&response_type=token"
+
+
+				function authFunc(){
+				  var win = window.open(getAuthUrl, "auth_window");
+				}
+
+				var accessToken = window.location.hash.replace('#','?')
+				console.log(accessToken);
+
+
+				var xhr = new XMLHttpRequest();
+
+				xhr.addEventListener("readystatechange", function () {
+				  if (this.readyState === 4) {
+				    var response = JSON.parse(this.responseText)
+				    console.log(response);
+				    response.data.map(function(item){
+
+				      var img = document.createElement('img');
+				     img.src =  item.images.low_resolution.url; document.querySelector(".container").appendChild(img);
+				     
+				    })
+				  }
+				});
+
+				xhr.open("GET", "https://api.instagram.com/v1/users/self/media/recent/"+accessToken);
+
+				xhr.send();
+
+
+
+		</script>
+	</head>
+	<body >
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Header -->
+			<header id="header">
+				<a href="index.html"><img src="images/logoText.PNG" alt="花蓮好書室"></a>
+				<nav class="links">
+					<ul>
+						<!-- <li><a href="friendh.html">最新消息</a></li> -->
+						<li><a href="index.html">關於好書室</a></li>
+						<li><a href="rooms.html">選間好書室</a></li>
+						<li><a href="policy.html">住宿問與答</a></li>
+						<li><a href="order.html">訂房資訊</a></li>
+						<li><a href="findUS.html">找到我們</a></li>
+					</ul>
+				</nav>
+				<nav class="main">
+					<ul>
+						<li class="menu">
+							<a class="fa-bars" href="#menu">Menu</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<!-- Menu -->
+			<section id="menu">
+				<!-- Search -->
+				<section id="intro">
+					<header>
+						<a href="index.html" class="logo"><img src="images/logoText.PNG" alt="花蓮好書室" /></a>
+					</header>
+				</section>
+				<!-- Links -->
+				<section>
+					<ul class="links">
+						<!-- <li><a href="friendh.html"><h3>最新消息</h3></a></li> -->
+						<li>
+							<a href="index.html">
+								<h3>關於好書室</h3>
+							</a>
+						</li>
+						<li>
+							<a href="rooms.html">
+								<h3>選間好書室</h3>
+							</a>
+							<a href="single.html" style="margin-left: 1em;"><p>單單</p></a>
+							<a href="yore.html" style="margin-left: 1em;"><p>昔時</p></a>
+							<a href="whiteWood.html" style="margin-left: 1em;"><p>白木</p></a>
+							<a href="days.html" style="margin-left: 1em;"><p>日常</p></a>
+						</li>
+						<li>
+							<a href="policy.html">
+								<h3>住宿問與答</h3>
+							</a>
+						</li>
+						<li>
+							<a href="order.html">
+								<h3>訂房資訊</h3>
+							</a>
+						</li>
+						<li>
+							<a href="findUS.html">
+								<h3>找到我們</h3>
+							</a>
+						</li>
+					</ul>
+				</section>
+				<!-- Actions -->
+				<section>
+					<ul class="icons">
+						<li><a href="https://www.facebook.com/haohouse1939/" target="_blank" class="fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://instagram.com/haohouse1939" target="_blank" class="fa-instagram"><span class="label">Instagram</span></a></li>
+						<!-- <li><a href="mailto:haohouse1939@gmail.com" target="_blank" class="fa-envelope"><span class="label">Email</span></a></li> -->
+						<li><a href="tel:+886930106882" target="_blank" class="fa-phone"><span class="label">Mobile</span></a></li>
+						<li><a href="https://goo.gl/maps/R2X6fZ3AyWs" target="_blank" class="fa-map-marker"><span class="label">localtion</span></a></li>
+					</ul>
+				</section>
+			</section>
+			<!-- Main -->
+			<div id="main">
+				<article class="post">
+				
+					<header>
+						<div class="title">
+							<h2><a href="https://www.facebook.com/haohouse1939/posts/795605690634176" target="_blank">環島 DayO</a></h2>
+							<p>花蓮好書室</p>
+						</div>
+						<div class="meta">
+							<time class="published" datetime="2015-11-01">April 7, 2018</time>
+							<a href="https://www.facebook.com/haohouse1939/posts/795605690634176" target="_blank" class="author"><span class="name">書榜、美保、澎吧</span><img src="images/avatar.jpg" alt="" /></a>
+						</div>
+					</header>
+					<a href="https://www.facebook.com/haohouse1939/posts/795605690634176" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29873513_795599443968134_1535513441409156667_o.jpg?_nc_cat=0&oh=199ee79d6d6581ff80bdf437db72e815&oe=5B9BBABC" alt="" /></a>
+					<p>謝謝從臺灣的各個角落來訪花蓮的妳和你，這兩年半對好書室的照顧，和我們分享你們的人生，也給我們機會與你們一起生活。<br>
+						現在，換我們去走一遭囉！<br>
+
+						我們將帶著澎，騎著你們曾騎過的好書室淑女車，以安全第一的方式，從花蓮出發，慢慢地環臺一周，和孩子一起看看這個臺灣，經過你的身旁。<br>
+						我們也許沒辦法去到每個角落，但我們會好好看望所經的每一處風景，就像你們來花蓮玩時一樣。<br>
+
+						所以，接下來的4/8-4/20，好書室沒有開放訂房<br>
+						換我們去兜兜風啦～<br>
+
+						起行者要出發囉<br>
+						歡迎沿路拍打餵食陪騎😘<br>
+					</p>
+					<div class="box alt">
+						<div class="row uniform">
+							<div class="4u"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/30420720_795614700633275_1595189391739558053_o.jpg?_nc_cat=0&oh=4fe2937f12b2a29e2a0805ce310b8e83&oe=5B90BA85" target="_blank"><span class="image fit"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/30420720_795614700633275_1595189391739558053_o.jpg?_nc_cat=0&oh=4fe2937f12b2a29e2a0805ce310b8e83&oe=5B90BA85" alt="" />這張爛紙是收拾行李的生命線！不能沒有它～</span></a></div>
+							<div class="4u"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/30168128_795614703966608_9171548135404208135_o.jpg?_nc_cat=0&oh=c0a39fb75a86c7468a82d8e9ab372aa7&oe=5B7BDDBC" target="_blank"><span class="image fit"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/30168128_795614703966608_9171548135404208135_o.jpg?_nc_cat=0&oh=c0a39fb75a86c7468a82d8e9ab372aa7&oe=5B7BDDBC" alt="" />記錄帶上的每一件必需品。歡迎諮詢討教喲</span></a></div>
+							<div class="4u$"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29871920_795614737299938_2426517524437145951_o.jpg?_nc_cat=0&oh=bb6d65222c995ab8d99b93e1de45b823&oe=5B9B716B" target="_blank"><span class="image fit"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29871920_795614737299938_2426517524437145951_o.jpg?_nc_cat=0&oh=bb6d65222c995ab8d99b93e1de45b823&oe=5B9B716B" alt="" />
+							跳過蘇花囉！安全最重要<br>宜蘭⋯宜蘭⋯宜蘭的朋友我們下次環島不會做弊了</span></a></div>
+						</div>
+					</div>
+				</article>
+				<article class="post">
+					<header>
+						<div class="title">
+							<h2><a href="https://www.facebook.com/haohouse1939/posts/796242207237191" target="_blank">環島 Day1</a></h2>
+							<p>花蓮 -> 福隆</p>
+						</div>
+						<div class="meta">
+							<time class="published" datetime="2015-11-01">April 8, 2018</time>
+							<a href="https://www.facebook.com/haohouse1939/posts/796242207237191" target="_blank" class="author"><span class="name">書榜、美保、澎吧</span><img src="images/avatar.jpg" alt="" /></a>
+						</div>
+					</header>
+					<p>以下流水帳文長慎入<br>
+
+						-客人退房完火速打掃趕忙在13:30前騎到花蓮火車站託運腳踏車，等待15:00的莒光往頭城<br>
+						-澎想幫打掃然後打破一個杯子😭<br>
+						-謝謝朋友接下來一週幫好書室的松蘿喝水<br>
+						-謝謝好照顧我們的鄰居徐爺爺幫我們留下從好書室出發的記錄和全家福<br>
+						-單車托運時車袋都要拆下來自扛（苦）<br>
+						-我帶上了冰箱裡放十幾天會壞的蔬菜水果蛋糕（這位太太妳很瘋狂），剛好在車站可以充當行動糧（其實因為多一包太大包所以開始狂吃消耗行李量）<br>
+						-在車站巧遇老同學世界好小又獲得一枚祝福打氣<br>
+						-其實是無座票，花蓮車票難買u know ~<br>
+						-很幸運全程有座，有時就是有人沒趕上火車u know~<br>
+						-澎在火車上超級乖巧安靜，感恩<br>
+						-然後我出頭城火車站才發現自己沒戴眼鏡！登愣<br>
+						-感謝車站人員幫扛單車出站<br>
+						-感謝路人幫我們拍全家福<br>
+						-頭城海岸好美好美好美啊！騎在龜山島旁好滿足<br>
+						-帶孩子的樂活行程，我們一天規劃60km，在整體行程安排下，都規劃山路不能超過全程的一半，然後不夜騎。因爲今天尚有客人退房，整個忙完已半天過去，又要搭火車，所以我們只安排半天的路程約30公里，將投宿點拉至福隆，於是火車坐到頭城。為的是第二天將走台2甲山路經過十分老街然後下至台北的全程只有一半山路一天60km的樂活行程<br>
+						-只是究竟要走菁桐至木柵出來，還是走汐止南港出來，我倆尚未定奪，隔天將從八里走濱海至南寮漁港，有朋友對於菁桐線或汐止線有好的建議嗎？<br>
+						-我們一路心心念念走台2要趕往舊草嶺隧道穿越到福隆的途中，發現隧道17:00關門了～登愣～<br>
+						-最差的示範：功課沒做好<br>
+						-最典型的旅行：總有意料之外的事發生<br>
+						-投宿的民宿主先安慰我不要焦慮😭然後說可以找最近的火車站試試搭車過來吧<br>
+						-是的，帶著寶貝澎，當搭車則搭車<br>
+						-於是我們意外的來到了台灣最東邊的車站：石城車站<br>
+						-無人車站，進站感應悠遊卡<br>
+						-超小月台，列車呼嘯而過的感受與畫面就像龍貓公車從眼前飆過沒有兩樣，好有fu啊⋯⋯<br>
+						-我們在月台又吃了一堆清冰箱行動糧，腦袋想著福隆便當<br>
+						-然後才想到請朋友幫我找找我的眼鏡究竟還在家嗎<br>
+						-終於抵達福隆，便當都關了😭<br>
+						-只好找環島好廚房小七吃晚餐<br>
+						-來到小巧可愛的比司吉投宿，孩子的作息不能等讓澎滿意探索每個角落後馬上洗洗睡(22:00)，連衣服都瞬間洗好晾好，結束我們精彩的第一天<br>
+						-原來最累的是要打流水帳～<br>
+						-噢，被通知眼鏡在家啊啊啊啊啊<br>
+					</p>
+					<div class="box alt">
+						<div class="row uniform">
+							<div class="4u"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30440862_796241353903943_5782727599693935679_n.jpg?_nc_cat=0&oh=bafcf4fba751c720c0a6826b4d7a7001&oe=5B982E27" target="_blank"><span class="image fit"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30440862_796241353903943_5782727599693935679_n.jpg?_nc_cat=0&oh=bafcf4fba751c720c0a6826b4d7a7001&oe=5B982E27" alt="" />這種時間在這種地點逗留的路人，都很會拍！感恩～<br>這是我超愛的蘭陽博物館</span></a></div>
+							<div class="4u"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29983322_796241367237275_1775596449428629634_o.jpg?_nc_cat=0&oh=d4edb95c8a79e66ad9943a1b761f37cf&oe=5B7FAD6E" target="_blank"><span class="image fit"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29983322_796241367237275_1775596449428629634_o.jpg?_nc_cat=0&oh=d4edb95c8a79e66ad9943a1b761f37cf&oe=5B7FAD6E" alt="" />疑，老榜的中年肚消失了！！很好很好再接再厲</span></a></div>
+							<div class="4u$"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29983617_796241380570607_896439703763231142_o.jpg?_nc_cat=0&oh=cbfd4eb7b7952e0d6ba72e2da6cd78d0&oe=5B905232" target="_blank"><span class="image fit"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29983617_796241380570607_896439703763231142_o.jpg?_nc_cat=0&oh=cbfd4eb7b7952e0d6ba72e2da6cd78d0&oe=5B905232" alt="" />
+							絕美的頭城沙灘，這邊騎單車好享受啊～，然後再往前是大溪漁港到處都是海鮮餐廳和海鮮燒烤啊啊啊啊可惡，不能停，停下就不會再前進了！</span></a></div>
+							<div class="4u"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30412062_796241413903937_6468200200162372543_n.jpg?_nc_cat=0&oh=128dca01207dd2f219dd495962af5b41&oe=5B8A2FDA" target="_blank"><span class="image fit"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30412062_796241413903937_6468200200162372543_n.jpg?_nc_cat=0&oh=128dca01207dd2f219dd495962af5b41&oe=5B8A2FDA" alt="" />忙一早上打掃的老榜拿著無座票卻有位置可以睡歪歪，真好真好</span></a></div>
+							<div class="4u"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30441642_796241433903935_1138613192498618012_n.jpg?_nc_cat=0&oh=17c0576d267184d855d11c4bb270b8d0&oe=5B7DC89E" target="+blank"><span class="image fit"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30441642_796241433903935_1138613192498618012_n.jpg?_nc_cat=0&oh=17c0576d267184d855d11c4bb270b8d0&oe=5B7DC89E" alt="" />超小月台，龍貓公車呼嘯而過，又驚喜又敬畏的心情⋯</span></a></div>
+							<div class="4u$"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30264411_796241453903933_6126471126962080832_n.jpg?_nc_cat=0&oh=f6b37e44527fd6025b25f4470e1568df&oe=5B52995F" target="_blank"><span class="image fit"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30264411_796241453903933_6126471126962080832_n.jpg?_nc_cat=0&oh=f6b37e44527fd6025b25f4470e1568df&oe=5B52995F" alt="" />
+							石城車站</span></a></div>
+							<div class="8u"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30412531_796241473903931_2407332794762868596_n.jpg?_nc_cat=0&oh=3e88d6ed49fabd681c12ab7393959f43&oe=5B87E3AB" target="_blank"><span class="image fit"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30412531_796241473903931_2407332794762868596_n.jpg?_nc_cat=0&oh=3e88d6ed49fabd681c12ab7393959f43&oe=5B87E3AB" alt="" />老榜的感性時間，寫那麼好以後粉專你寫啦：<br>
+
+							旅程的第一天，果不其然就是會發生哭笑不得的烏龍，但隨之而來的意外收穫也讓這旅程添加了一些色彩<br>
+
+							這樣苦力的旅程中一定要帶著一樣療癒身心的物品，只能選一樣，那一定就是吹風機了<br>
+							在這溫暖的風中結束了這一晚～晚安<br>
+
+							比司吉<br></span></a></div>
+						</div>
+					</div>
+				</article>
+				<article class="post">
+					<header>
+						<div class="title">
+							<h2><a href="https://www.facebook.com/haohouse1939/posts/796700770524668" target="_blank">環島 Day2</a></h2>
+							<p>福隆 -> 關渡</p>
+						</div>
+						<div class="meta">
+							<time class="published" datetime="2015-11-01">April 9, 2018</time>
+							<a href="https://www.facebook.com/haohouse1939/posts/796700770524668" target="_blank" class="author"><span class="name">書榜、美保、澎吧</span><img src="images/avatar.jpg" alt="" /></a>
+						</div>
+					</header>
+					<p>9:10福隆比司吉民宿-台2丙-106木柵動物園-轉河濱自行車道-18:10關渡碼頭 92.7km 9hr(含休息用餐）<br>
+
+						以下流水帳文長慎入<br>
+
+						-早起看著澎的睡臉滿滿幸福，今天也要平安順利<br>
+						-太太我把清冰箱的1.蔬菜川燙了然後殺了十個2.百香果已及3.麵包4.蛋糕弄成了一盤早餐lite<br>
+						-行動糧終於被我消滅得差不多了<br>
+						-一出發很快就轉進台2丙，從福隆到十分，這條路太美太美太美，沒有什麼車輛，幾乎都是自行車，風光明媚，非常推薦來走走唷<br>
+						-到了十分才騎了兩個小時，遠不及我們預估的時間，於是決定菁桐再用餐<br>
+						-中間只要想休息拍照就會被澎唸：「媽媽妳上來（拍椅墊）要騎，不要下車🤚。」原來這趟旅程需要休息的人是我，不是澎🤣<br>
+						-雙溪、十分、平溪、菁桐、平溪、深坑這些地方爸爸媽媽上一次來都還只是男女朋友欸！天啊⋯帶著妳來好感動喔(而且還是單車來)<br>
+						-上一次爸爸探訪莫內咖啡時，正考到重機駕照，所以他一定要拍一張<br>
+						-我們上坡已經騎到怕了，離開菁桐終於開始下坡，感恩<br>
+						-滑到深坑臭豆腐吃吃喝喝玩到15:00，車友介紹我們走109至南港然後走自行車道去關渡只要40分鐘，聽起來很不錯～就照做了<br>
+						-於是回頭爬109，結果咧⋯⋯陡上啊！爬了兩公里的陡上我腿力耗盡氣急敗壞決定折返。<br>
+						-你知道對一介媽媽來說，時間控管已經行至下午我還在深坑然後要走一條要爬山的路是多讓人懊惱的事嗎，有下坡路不滑，我爬山幹嘛咧？折返折返～<br>
+						-然後我們再次經過深坑，騎至木柵動物園轉河濱自行車道<br>
+						-澎澎我們又來一次動物園了，這次騎車來唷<br>
+						-這條車道很厲害，它完全沿著一直換名字的淡水河走，途經了我倆很熟悉的台北，老榜進入了老兵懷舊狀態<br>
+						-它能看到超多東西，你不曾想過它們之間這麼單純就串聯起來：木柵景美萬隆公館，是以前生活過的地方，阿我看到寶藏巖、看到新光三越、看到圓山飯店、看到文化大學、看到八卦山、看到慈濟和華碩、看到關渡宮<br>
+						-熟得不能再熟的景象，只是這次我沿著溪行，河面越來越大，夕陽越來越低，最後它們都一起閃著耀眼的夕照，好美<br>
+						-才發現我們竟然騎到90公里！超乎預期～大概是澎澎總司令的後座鞭策吧😭<br>
+						-今天從東北海岸進了山裡，其實就是一直沿著溪行至大海，看了山林、聚落、住宅、商業辦公大樓、碼頭竹筏，跟著溪走了一遭<br>
+						-宿於榜家，澎的這趟還與阿公阿嬤聚聚了<br>
+
+						-今日順利，明日會更順利的吧～<br>
+						-單車騎的地方，根本是同時空的平行世界<br>
+						-除了好美，詞窮<br>
+
+						-選首圖太難了⋯<br>
+
+
+						-噢對了因為宿家裡所以獲得了自己的上一副眼鏡！眼鏡對我來說除了看更清楚一點，更重要的是擋蟲！今天沒眼鏡不知道多少小蟲被我的大眼睛撞擊（蟲亡眼睛痛⋯）眼鏡很重要⋯<br>
+					</p>
+					<div class="box alt">
+						<div class="row uniform">
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29872667_796684860526259_6362206999830749817_o.jpg?_nc_cat=0&oh=fdd809ba0024d0aeaccaab5f355b46a9&oe=5B82D5F3" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29872667_796684860526259_6362206999830749817_o.jpg?_nc_cat=0&oh=fdd809ba0024d0aeaccaab5f355b46a9&oe=5B82D5F3" alt="" />這是克難自拍喲～</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/30167322_796684813859597_6516935189754805195_o.jpg?_nc_cat=0&oh=7e4d66550642a09727d83e6f0d750c5e&oe=5B81D789" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/30167322_796684813859597_6516935189754805195_o.jpg?_nc_cat=0&oh=7e4d66550642a09727d83e6f0d750c5e&oe=5B81D789" alt="" />早安九重葛和福隆沙灘</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29983168_796684930526252_579693523722090541_o.jpg?_nc_cat=0&oh=f9403d840de73643268fbb5eebcdfbbb&oe=5B8C0C35" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29983168_796684930526252_579693523722090541_o.jpg?_nc_cat=0&oh=f9403d840de73643268fbb5eebcdfbbb&oe=5B8C0C35" alt="" />超美的台2丙，整條馬路只有我們～～包！場！</span></a></div>
+
+
+							
+							
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30441494_796684810526264_8477352519508153779_n.jpg?_nc_cat=0&oh=a6016af134cd8b25e0c7aa5ae92f3269&oe=5B883D16" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30441494_796684810526264_8477352519508153779_n.jpg?_nc_cat=0&oh=a6016af134cd8b25e0c7aa5ae92f3269&oe=5B883D16" alt="" />澎澎真的是很棒的旅伴
+因為她不准我停下😭😭😭😭😭</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30442511_796684927192919_670119441133943797_n.jpg?_nc_cat=0&oh=0d84130e10c31dc7662db2a195389850&oe=5B8A50CF" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30442511_796684927192919_670119441133943797_n.jpg?_nc_cat=0&oh=0d84130e10c31dc7662db2a195389850&oe=5B8A50CF" alt="" />澎超想玩沙⋯⋯嗚嗚不行我們這次是環島噢</span></a></div>
+
+							
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30442804_796684973859581_8223273060207000770_n.jpg?_nc_cat=0&oh=460905f87e67937f7ac5dee1b09572c3&oe=5B8AAC95" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30442804_796684973859581_8223273060207000770_n.jpg?_nc_cat=0&oh=460905f87e67937f7ac5dee1b09572c3&oe=5B8AAC95" alt="" />不願下車的孩子，一直叫我回去騎</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29872754_796684970526248_4471359999637774459_o.jpg?_nc_cat=0&oh=946138d470a2a61e6b42108713d363aa&oe=5B7CDE68" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29872754_796684970526248_4471359999637774459_o.jpg?_nc_cat=0&oh=946138d470a2a61e6b42108713d363aa&oe=5B7CDE68" alt="" />雙溪</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29983348_796685003859578_8553928547254762676_o.jpg?_nc_cat=0&oh=edcff9e684bdc2f6719ab3b29c1c5b56&oe=5B9245A0" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29983348_796685003859578_8553928547254762676_o.jpg?_nc_cat=0&oh=edcff9e684bdc2f6719ab3b29c1c5b56&oe=5B9245A0" alt="" />本以為是終結上坡的無敵隧道，結果⋯⋯⋯想得美！</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29872840_796685007192911_3451583749933055583_o.jpg?_nc_cat=0&oh=ccb781227122265051d1c63d2edc1257&oe=5B88AF9A" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29872840_796685007192911_3451583749933055583_o.jpg?_nc_cat=0&oh=ccb781227122265051d1c63d2edc1257&oe=5B88AF9A" alt="" />沿路很多車禍的蝴蝶🦋特別跟澎上了一堂小課</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29872435_796685213859557_4190448868756202677_o.jpg?_nc_cat=0&oh=0b7b144ecfe0444a81cdc513cf7c8e06&oe=5B941FBA" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29872435_796685213859557_4190448868756202677_o.jpg?_nc_cat=0&oh=0b7b144ecfe0444a81cdc513cf7c8e06&oe=5B941FBA" alt="" />澎：「又拍照了，快騎！」</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/30051719_796685120526233_810839774327191019_o.jpg?_nc_cat=0&oh=49de6fbbd7031b2ecb0c2d1a4588060a&oe=5B92BBC0" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/30051719_796685120526233_810839774327191019_o.jpg?_nc_cat=0&oh=49de6fbbd7031b2ecb0c2d1a4588060a&oe=5B92BBC0" alt="" />爸爸老東家在那！</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29983469_796685167192895_7568569837583548043_o.jpg?_nc_cat=0&oh=7f1b515160d36ffd57b188eb607ecced&oe=5B8F3253" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29983469_796685167192895_7568569837583548043_o.jpg?_nc_cat=0&oh=7f1b515160d36ffd57b188eb607ecced&oe=5B8F3253" alt="" />騎過一座又一座橋下</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30531148_796685067192905_2615541760418340374_n.jpg?_nc_cat=0&oh=6285729aa3521bf3d66cd4c95160ca3f&oe=5B8627D7" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30531148_796685067192905_2615541760418340374_n.jpg?_nc_cat=0&oh=6285729aa3521bf3d66cd4c95160ca3f&oe=5B8627D7" alt="" />看！沒車！超讚</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30440889_796685063859572_4511716958791930053_n.jpg?_nc_cat=0&oh=ab0023baa9ad511527ba43e5cf0ff782&oe=5B81DFFC" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30440889_796685063859572_4511716958791930053_n.jpg?_nc_cat=0&oh=ab0023baa9ad511527ba43e5cf0ff782&oe=5B81DFFC" alt="" />神拍手車友～沒有腳架都靠路人了～感恩<br>孩子依然不肯下車，催促我們上路</span></a></div>
+
+							
+
+							
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/30052316_796685170526228_8767215114483297376_o.jpg?_nc_cat=0&oh=a2f3fe8acee9957ddabe1c5b2685de6d&oe=5B4F9E55" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/30052316_796685170526228_8767215114483297376_o.jpg?_nc_cat=0&oh=a2f3fe8acee9957ddabe1c5b2685de6d&oe=5B4F9E55" alt="" />城市的天空</span></a></div>
+
+							
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30442463_796685223859556_5737424673161132196_n.jpg?_nc_cat=0&oh=e899d9ea7616948eea2c4da7987aadee&oe=5B8D2DC6" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30442463_796685223859556_5737424673161132196_n.jpg?_nc_cat=0&oh=e899d9ea7616948eea2c4da7987aadee&oe=5B8D2DC6" alt="" />夕陽！<br>
+							東部也有夕陽，政客看過🤣
+							</span></a></div>
+
+							
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30530534_796685253859553_2593682975199586549_n.jpg?_nc_cat=0&oh=e5a5beebd7add14cc25cc113c7de5cb2&oe=5B926C9C" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30530534_796685253859553_2593682975199586549_n.jpg?_nc_cat=0&oh=e5a5beebd7add14cc25cc113c7de5cb2&oe=5B926C9C" alt="" />喜歡靠著媽媽的背撒嬌（這樣也能撒嬌！）</span></a></div>
+
+							
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30582056_796685297192882_2664078566100825267_n.jpg?_nc_cat=0&oh=dc4f48339b1fa7ecf9379d7bd6b678f9&oe=5B807303" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30582056_796685297192882_2664078566100825267_n.jpg?_nc_cat=0&oh=dc4f48339b1fa7ecf9379d7bd6b678f9&oe=5B807303" alt="" />酷！</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30440766_796685263859552_7528648207430247634_n.jpg?_nc_cat=0&oh=fd40de676166ebdb48ff5c22ed1fa21e&oe=5B888701" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30440766_796685263859552_7528648207430247634_n.jpg?_nc_cat=0&oh=fd40de676166ebdb48ff5c22ed1fa21e&oe=5B888701" alt="" />洲美單車道</span></a></div>	
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30571272_796685123859566_5244617279997378727_n.jpg?_nc_cat=0&oh=26ce7fe65917cebe6323e495dcccf62f&oe=5B8C473F" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30571272_796685123859566_5244617279997378727_n.jpg?_nc_cat=0&oh=26ce7fe65917cebe6323e495dcccf62f&oe=5B8C473F" alt="" />在爸爸心中很有份量的地方</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30530403_796684877192924_837747289132488954_n.jpg?_nc_cat=0&oh=dab1a4b843a8b1f0f9a0dfb69939b27e&oe=5B8D9B02" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30530403_796684877192924_837747289132488954_n.jpg?_nc_cat=0&oh=dab1a4b843a8b1f0f9a0dfb69939b27e&oe=5B8D9B02" alt="" />秒殺百香果<br>誰旅行從家裡帶蔬菜水果，何況單車環島~有，我🙋</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29983433_796685300526215_8507171498276776913_o.jpg?_nc_cat=0&oh=462b8fe2c71a532e735bc08d64a98725&oe=5B50B7C2" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29983433_796685300526215_8507171498276776913_o.jpg?_nc_cat=0&oh=462b8fe2c71a532e735bc08d64a98725&oe=5B50B7C2" alt=""/>往淡水囉～</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/30073387_796685340526211_459918075904759367_o.jpg?_nc_cat=0&oh=24b512ac4bcdd8a79be763f1b7763fca&oe=5B998487" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/30073387_796685340526211_459918075904759367_o.jpg?_nc_cat=0&oh=24b512ac4bcdd8a79be763f1b7763fca&oe=5B998487" alt=""/>天黑前抵達關渡，說好不夜騎</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29871864_796685343859544_911556445682399572_o.jpg?_nc_cat=0&oh=e8e29dcf03aa1948394775d3d6b8b1ef&oe=5B9D606D" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29871864_796685343859544_911556445682399572_o.jpg?_nc_cat=0&oh=e8e29dcf03aa1948394775d3d6b8b1ef&oe=5B9D606D" alt=""/>謝謝阿公阿嬤包容我們帶澎環島</span></a></div>
+
+						</div>
+					</div>
+				</article>
+
+				<article class="post">
+					<header>
+						<div class="title">
+							<h2><a href="https://www.facebook.com/haohouse1939/posts/797188620475883" target="_blank">環島 Day3</a></h2>
+							<p>關渡 -> 新竹</p>
+						</div>
+						<div class="meta">
+							<time class="published" datetime="2015-11-01">April 10, 2018</time>
+							<a href="https://www.facebook.com/haohouse1939/posts/797188620475883" target="_blank" class="author"><span class="name">書榜、美保、澎吧</span><img src="images/avatar.jpg" alt="" /></a>
+						</div>
+					</header>
+					<p>
+						10:00關渡宮-關渡大橋-八里十三行博物館-台15-台61-新屋綠色走廊-台61-轉進新竹市18:00<br>
+
+						84.4km 8hr(含休息用餐）<br>
+
+						以下流水帳，難嚼，慎入<br>
+
+						-出發時，三人全都包緊緊，因為空氣將不好<br>
+						-在關渡大橋請車友幫拍合照，結果車友是老玉里人現居淡水，哇塞到處都是花蓮人的概念嗎哈哈哈<br>
+						-八里到十三行博物館之間很愜意舒服<br>
+						-十三行博物館開始的西濱，就是單調無補給<br>
+
+						-新竹以北之西濱，以上簡述，以下摘要<br>
+
+						-八里：小工廠、垃圾焚化爐<br>
+						-林口：垃圾分門別類相關廠、儲<br>
+						-桃園：化工廠非常多⋯，都是重工業<br>
+						-看見了台電風車好近，開心<br>
+						-進入新竹縣我們瘋狂找61旁的自行車道或鄉間小路走，看看老磚房看看夕陽沙灘<br>
+						-轉進新屋綠色走廊，全家都有活過來的感覺。<br>
+						-看見台電風車沒那麼近，開心<br>
+						-鳳鼻隧道讓人厭世<br>
+
+						-為什麼這麼美的海岸，堆滿了垃圾和重工業⋯⋯噢當然和海港和空港有關係，但面對環境，難道沒有辦法用更謹慎的態度去經營這些產業嗎？<br>
+						-想到齊導的《看見台灣》美麗畫面裡污染的溪，今天也看到了。<br>
+						-想到美崙的海岸和蘭嶼的核廢（扯太遠了）<br>
+						-空無一人的筆直省道旁是巨大的各種重工業還有巨大的台電風車。一開始看到風車又興奮又開心，看了十幾二十個風車後就產生了單調荒涼的末日感。看起來很不舒服，擊中了心中某一處要害，但說不上來，這種感覺捕捉起來重整過後給世人觀看聆聽嗅聞感受就會成了藝術，但真實活在裡面是難受的。我騎在巨大風車下緩慢的經過一個又一個的廠房，要是等會使徒唰的突然霸佔上空，零號機和初號機隨時從某個地面乍然升起都不意外。<br>
+						-以上的感受、嗅覺、視覺疊加起來，印象猛然的敲上腦門：好像北京！那個環境看似正常卻污染嚴重完全不適人居的狀態和曾經在北京的生活重疊了，連氣味都重疊⋯<br>
+
+						-單車環島西北部如果再選一次，我會讓自己大腿炸開廢在石門水庫<br>
+						-噢⋯大逆風<br>
+						-被‘想念東部海岸’淹沒<br>
+
+					</p>
+					<div class="box alt">
+						<div class="row uniform">
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30629025_797184557142956_6888178012745198205_n.jpg?_nc_cat=0&oh=3aab38fcd5d58824b23e552db098a21c&oe=5B9C7039" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30629025_797184557142956_6888178012745198205_n.jpg?_nc_cat=0&oh=3aab38fcd5d58824b23e552db098a21c&oe=5B9C7039" alt="" />看似晴朗其實很霧
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30516274_797184570476288_3824165972195655930_n.jpg?_nc_cat=0&oh=6725c49875bb93098dd8ee7b7b1617d0&oe=5B8F1F92" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30516274_797184570476288_3824165972195655930_n.jpg?_nc_cat=0&oh=6725c49875bb93098dd8ee7b7b1617d0&oe=5B8F1F92" alt="" />單車騎往桃園機場，要上飛機嗎～
+							</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30530816_797184613809617_2720787398566333783_n.jpg?_nc_cat=0&oh=6ef91e8ad8ca80a10fe40fd11ff4fb64&oe=5B884FE3" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30530816_797184613809617_2720787398566333783_n.jpg?_nc_cat=0&oh=6ef91e8ad8ca80a10fe40fd11ff4fb64&oe=5B884FE3" alt="" />好美的畫面好臭的空氣
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30595048_797184617142950_4966123209781054530_n.jpg?_nc_cat=0&oh=198f5eaa028d3aee6a62ea749b3d10f8&oe=5B978BB0" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30595048_797184617142950_4966123209781054530_n.jpg?_nc_cat=0&oh=198f5eaa028d3aee6a62ea749b3d10f8&oe=5B978BB0" alt="" />啊⋯⋯新屋綠色走廊拯救了我的思緒
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30595184_797184660476279_1721487082851146577_n.jpg?_nc_cat=0&oh=54f9a4867a116d9c93b093e8fc98fc80&oe=5B502095" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30595184_797184660476279_1721487082851146577_n.jpg?_nc_cat=0&oh=54f9a4867a116d9c93b093e8fc98fc80&oe=5B502095" alt="" />燃燒的火球
+							</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30581878_797184670476278_2541745111656221287_n.jpg?_nc_cat=0&oh=86bb9baba951a90c36b5c7c4d299dcc5&oe=5B9B963B" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30581878_797184670476278_2541745111656221287_n.jpg?_nc_cat=0&oh=86bb9baba951a90c36b5c7c4d299dcc5&oe=5B9B963B" alt="" />這年紀的老房子我從沒真的親眼看過，阿公家的還沒有這麼老⋯。超級驚喜❤️
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30594214_797184710476274_1516189747718015291_n.jpg?_nc_cat=0&oh=478386f298d7c8a1c6e148725b74498d&oe=5B989007" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30594214_797184710476274_1516189747718015291_n.jpg?_nc_cat=0&oh=478386f298d7c8a1c6e148725b74498d&oe=5B989007" alt="" />小庄小田的鄉間小路
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30652751_797184730476272_3675530787134072911_n.jpg?_nc_cat=0&oh=4e16b4859656d53f14881a3802c784ea&oe=5B96260B" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30652751_797184730476272_3675530787134072911_n.jpg?_nc_cat=0&oh=4e16b4859656d53f14881a3802c784ea&oe=5B96260B" alt="" />今日裝備：包超緊
+							</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30656598_797184780476267_8882434865540786380_n.jpg?_nc_cat=0&oh=386c6f28f2c2783bcbf909c184da2687&oe=5B86BE70" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30656598_797184780476267_8882434865540786380_n.jpg?_nc_cat=0&oh=386c6f28f2c2783bcbf909c184da2687&oe=5B86BE70" alt="" />他鄉遇故知，謝謝您幫我們留下今天唯一的合照
+							</span></a></div>
+
+						</div>
+						<div class="googlemap">
+						<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fhaohouse1939%2Fvideos%2F796886113839467%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+						</div>
+						<P>
+							早！<br>
+							我們很不喜歡騎隧道，
+							因為空氣差、車噪聲、車子過的空氣壓都很大。<br>
+
+							但，這段影片表現出來的畫面，
+							就像我們運動時的感受，
+							不管是爬山、慢跑，還是單車環島，
+							在心中都是直直向著光，驅使身體慢慢前進的，
+
+							抵達光的那端時，
+							成就感無以言喻。<br>
+
+							我們為什麼用單車環島？<br>
+							是很多細微的原因疊加而成的，其中絕對有這個。
+							不是為了挑戰自我，不是為了冒險犯難，
+							就是想向每位來過家裡留宿的你致敬，
+							看看你們來自的地方有多美，想像你們旅行來到花蓮時的感受，
+
+							以及，想一直向著 光 前進。<br>
+
+							今天也要加油。
+							謝謝關心祝福我們的你❤️
+						</P>
+					</div>
+				</article>
+
+				<article class="post">
+					<header>
+						<div class="title">
+							<h2><a href="https://www.facebook.com/haohouse1939/posts/797719230422822" target="_blank">環島 Day4</a></h2>
+							<p>新竹 -> 鹿港小鎮</p>
+						</div>
+						<div class="meta">
+							<time class="published" datetime="2015-11-01">April 11, 2018</time>
+							<a href="https://www.facebook.com/haohouse1939/posts/797719230422822" target="_blank" class="author"><span class="name">書榜、美保、澎吧</span><img src="images/avatar.jpg" alt="" /></a>
+						</div>
+					</header>
+					<p>
+					9:15新竹火車站-新竹17公里自行車道-台61-白沙屯好望角鐵道旁小路-台61-台17-海埔派出所-鹿港天后宮18:40<br>
+
+					#說好的台中呢？<br>
+
+					112.多km 9.5hr(含休息用餐）<br>
+
+					以下流水帳文長慎入<br>
+
+					-本來8:50要出發的，結果發現腳踏車籃被沒品的人刻意吐檳榔汁和檳榔渣，氣死！沒水準的人怎麼不去SESa<br>
+					-清理完車子又是過九點才出發，我們要往海邊的新竹17公里自行車道去<br>
+					-新竹的空氣霧霧的，但自行車道很順，遇見同路車友來自重慶<br>
+					-接台61，遇見同路車友頭巾帥哥<br>
+					-哇，我們的陣容挺不錯的，有兩大一小淑女車花蓮出發、來自重慶登山車台北出發、來自大甲公路車新北出發<br>
+					-大家都在無盡的台61泅泳，你刷我卡我刷你卡，聊天聊到都要挖身家背景了🤣<br>
+					-將要靠近白沙屯好望角，我們道別後被公路車和登山車海放～。其實大家都在長長的61騎累了，但，淑女車沒有海放別人的本錢啊哈哈哈⋯<br>
+					-我們不想騎上好望角，於是離開61轉往鐵路旁可愛小路，好舒服好美啊～<br>
+					-這條小路上有過港貝化石群，這應該是我第一次看到戶外野生XD的化石<br>
+					-發現空氣變好，苗栗往南一路空氣都比昨天好太多喲（但傍晚又變差了）<br>
+					-超多風車但看它們方向全不一致就覺得很逗趣，而且風車從桃園一直到彰化都有欸！（驚奇！是我孤陋寡聞😅）<br>
+					-接回61的路口進711補給一下，遇到重慶登山車正在休息，他知道我們沒上好望角非常驚訝（他也想繞過XDD)<br>
+					-然後我們就騎到台中了！！（驚）<br>
+					-早了兩個小時<br>
+					-因為考量氣象預報的變化還有我們選擇的路線上台中一直找不到適合的住宿地點，老榜說服我再騎20公里就到鹿港（了耶）<br>
+					-於是趕緊跟台中熱情的你們說一聲啦（我真的是用說的，語音辨識超厲害）<br>
+					-騎東部沖積扇地形跟騎西部沿海平原地形真的有差，雖然沒有各種景緻，但腳一直踩，公里數就蹦蹦蹦的增加了，好神奇啊<br>
+					-然後就到彰化了（哇）<br>
+					-發現彰化地區駕駛人都把機慢車專用道當成慢車道佔用，然後不管大車小車在路口誰也沒讓誰的～😭<br>
+					-感謝在警局裝水時員警親切的問候和提供住宿建議，再加上朋友住宿和吃的推薦，我們快樂在鹿港吃完順利的抵達民宿了～<br>
+					-今天一樣趕緊洗曬衣服讓澎澎玩一玩在十點前睡著，然後老榜也睡著了<br>
+					-又是我一個人醒著打文章的夜晚～<br>
+
+					後記：<br>
+					不要說你們，我也很訝異我們就這樣到鹿港了。<br>
+					出發前，在每天試騎和規劃路線的階段，只敢規劃一天60公里，約8-9小時含休息，差不多就是我們在花蓮一天可以負擔的狀態；西部完全不熟悉，猜想因為地勢平坦，所以一天預計以80公里來安排路線。<br>
+					但地形氣候真的有差，每一天，都順順的多一點（比如Day2預計大稻埕結果去關渡、Day3預計南寮漁港結果去新竹火車站）<br>
+					今天從頭到尾都是沿海平原，就騎出了百餘公里，也是從沒預料到的。<br>
+					然後，能讓我們有這種看似很猛的體力，除了上述的原因外，適合的服裝也很重要。<br>
+					我們穿著壓縮車褲來減輕這趟環島旅行腿部的壓力與不適，穿著緊身的四季排汗衣來維持身體在各種溫度的舒適感，身體舒服了，就能騎更好。這也是今天的心得之一～<br>
+					最後，好的旅伴非常重要<br>
+					我們出發前的分工是，我安排路線與準備行囊，老榜負責確認車子狀況與再次確認行囊裏物品的增減；出發後的分工是，我負責行囊秘書，要什麼就能變出什麼，每天衣物的清洗晾乾收納，還有每日發文、對外聯繫，簡稱總務文書，老榜負責被我指揮顧澎、還有資訊的蒐集，依據情況更改我的公里數或落腳處
+					澎澎負責賣萌，叫我不要拍照/牽車/聊天，趕快騎！然後在後座唱歌、說話、看到什麼問什麼，太單調的景象就睡一覺，還有決定晚餐與補給XD
+					她真是太棒了都忘記她才兩歲八個月～<br>
+					好謝謝她是她。<br>
+
+					每天都能發現很多新東西，也多了解很多事情呢，感恩～
+
+					</p>
+					<div class="box alt">
+						<div class="row uniform">
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30581483_797675780427167_1918954801900516930_n.jpg?_nc_cat=0&oh=f5f27dee8067c40f09fda4fc44f895d8&oe=5B5086AF" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30581483_797675780427167_1918954801900516930_n.jpg?_nc_cat=0&oh=f5f27dee8067c40f09fda4fc44f895d8&oe=5B5086AF" alt="" />超大南風，但海邊的空氣就變好些了
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30624446_797675803760498_9042758636848019911_n.jpg?_nc_cat=0&oh=7624d8f1ce501ca801b42182f72c872f&oe=5B8A2FED" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30624446_797675803760498_9042758636848019911_n.jpg?_nc_cat=0&oh=7624d8f1ce501ca801b42182f72c872f&oe=5B8A2FED" alt="" />激凸不宜。我們偷吃步轉進小路不騎好望角
+							</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29872997_797675830427162_5534774735371505879_o.jpg?_nc_cat=0&oh=241d3c7d2afa460717311e8bbb51f026&oe=5B907E2C" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29872997_797675830427162_5534774735371505879_o.jpg?_nc_cat=0&oh=241d3c7d2afa460717311e8bbb51f026&oe=5B907E2C" alt="" />出發時在新竹自行車道，那時空氣還很糟
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30629786_797675873760491_5017225140800127699_n.jpg?_nc_cat=0&oh=265f4271e0252aab69e7d15fa631ff89&oe=5B94AE4D" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30629786_797675873760491_5017225140800127699_n.jpg?_nc_cat=0&oh=265f4271e0252aab69e7d15fa631ff89&oe=5B94AE4D" alt="" />只有藍天橋是藍色的
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30652463_797675930427152_2356938304269090832_n.jpg?_nc_cat=0&oh=2a993a473feb71e4e9e12e6daf80edc6&oe=5B817864" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30652463_797675930427152_2356938304269090832_n.jpg?_nc_cat=0&oh=2a993a473feb71e4e9e12e6daf80edc6&oe=5B817864" alt="" />離鐵軌好近的小路
+							</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30629049_797675960427149_6631144823230663828_n.jpg?_nc_cat=0&oh=5075006066fe5499ccab6c8d5e1813ea&oe=5B53D846" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30629049_797675960427149_6631144823230663828_n.jpg?_nc_cat=0&oh=5075006066fe5499ccab6c8d5e1813ea&oe=5B53D846" alt="" />超開心的澎～
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30623810_797675977093814_326474559591273049_n.jpg?_nc_cat=0&oh=51c57434d421a125bc2c6646a29e2666&oe=5B9A961C" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30623810_797675977093814_326474559591273049_n.jpg?_nc_cat=0&oh=51c57434d421a125bc2c6646a29e2666&oe=5B9A961C" alt="" />喜歡這裡～左邊是好望角的步道
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29873349_797675997093812_8069419372888942397_o.jpg?_nc_cat=0&oh=b8ba5f2ddd32b17f44521cf00dcbb367&oe=5B989DB2" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29873349_797675997093812_8069419372888942397_o.jpg?_nc_cat=0&oh=b8ba5f2ddd32b17f44521cf00dcbb367&oe=5B989DB2" alt="" />往台海看去
+
+							</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30705619_797676030427142_3853713805249438389_n.jpg?_nc_cat=0&oh=cba38d7de84dae1e64f863842f8bf170&oe=5B7D03E0" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30705619_797676030427142_3853713805249438389_n.jpg?_nc_cat=0&oh=cba38d7de84dae1e64f863842f8bf170&oe=5B7D03E0" alt="" />風車多到已經沒有感覺了哈哈哈
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30652713_797676033760475_5258867363097448266_n.jpg?_nc_cat=0&oh=700663e1f8148fc824fd5893104ce6a5&oe=5B9BA3FC" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30652713_797676033760475_5258867363097448266_n.jpg?_nc_cat=0&oh=700663e1f8148fc824fd5893104ce6a5&oe=5B9BA3FC" alt="" />慢慢慢慢慢，我們真的騎很慢
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29983258_797676080427137_2903246640727959017_o.jpg?_nc_cat=0&oh=7f78a54d8282c36386c1789c0d88f40d&oe=5B8D3814" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29983258_797676080427137_2903246640727959017_o.jpg?_nc_cat=0&oh=7f78a54d8282c36386c1789c0d88f40d&oe=5B8D3814" alt="" />在61的路邊，總司令說她要吃餅乾
+
+							</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30629335_797676097093802_3923339754225432560_n.jpg?_nc_cat=0&oh=0da0533e6dcab36a922394542401c0db&oe=5B509C3B" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30629335_797676097093802_3923339754225432560_n.jpg?_nc_cat=0&oh=0da0533e6dcab36a922394542401c0db&oe=5B509C3B" alt="" />總司令說駕駛翹腳好好玩
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30652973_797676140427131_5446785552610114988_n.jpg?_nc_cat=0&oh=28b6d0e6000acc58e5fb8bc8f92d7bea&oe=5B86CFBB" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30652973_797676140427131_5446785552610114988_n.jpg?_nc_cat=0&oh=28b6d0e6000acc58e5fb8bc8f92d7bea&oe=5B86CFBB" alt="" />總司令和冒泡的雲
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30688271_797676157093796_6646006845069999131_n.jpg?_nc_cat=0&oh=dfab1474857bf603c4f10edc09e8afa7&oe=5B8D3304" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30688271_797676157093796_6646006845069999131_n.jpg?_nc_cat=0&oh=dfab1474857bf603c4f10edc09e8afa7&oe=5B8D3304" alt="" />台中的天空，雲好逗趣
+
+							</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/30167181_797676187093793_3035106055921699435_o.jpg?_nc_cat=0&oh=631aff57a66a3f8be00c9ba0f9990ad2&oe=5B8634D7" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/30167181_797676187093793_3035106055921699435_o.jpg?_nc_cat=0&oh=631aff57a66a3f8be00c9ba0f9990ad2&oe=5B8634D7" alt="" />鹿港街頭，蚵仔湯、麵線好好吃喔
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29872511_797676203760458_5504612779495133693_o.jpg?_nc_cat=0&oh=d80352b3e9cdb85ddfa0b77787972451&oe=5B80BDB7" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29872511_797676203760458_5504612779495133693_o.jpg?_nc_cat=0&oh=d80352b3e9cdb85ddfa0b77787972451&oe=5B80BDB7" alt="" />
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30582119_797730860421659_3653980327153427256_n.jpg?_nc_cat=0&oh=127780a313d39def66b4131f9fba4e24&oe=5B91CC69" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30582119_797730860421659_3653980327153427256_n.jpg?_nc_cat=0&oh=127780a313d39def66b4131f9fba4e24&oe=5B91CC69" alt="" />澎下車了🤣🤣🤣
+
+							</span></a></div>
+
+							
+
+						</div>
+					</div>
+				</article>
+
+				<article class="post">
+					<header>
+						<div class="title">
+							<h2><a href="https://www.facebook.com/haohouse1939/posts/798091390385606" target="_blank">環島 Day5</a></h2>
+							<p>鹿港小鎮 -> 嘉義</p>
+						</div>
+						<div class="meta">
+							<time class="published" datetime="2015-11-01">April 12, 2018</time>
+							<a href="https://www.facebook.com/haohouse1939/posts/798091390385606" target="_blank" class="author"><span class="name">書榜、美保、澎吧</span><img src="images/avatar.jpg" alt="" /></a>
+						</div>
+					</header>
+					<p>
+						9:30鹿港小鎮-google map行人模式-嘉義市圓環17:30<br>
+
+						73.2km 8hr(含休息用餐）<br>
+
+						流水帳慎入<br>
+
+						-在鹿港天后宮早餐完9:50出發<br>
+						-才剛出鹿港小鎮就遇到重慶登山車，他今天也要去嘉義<br>
+						-直接使用google map的行人模式導航嘉義市圓環<br>
+						-開啟了小路模式，不在環島1號線上，但不時的回到環島1號線然後又回到小路<br>
+						-所以我不知道自己在哪，估狗知道就好<br>
+						-彰化埤頭綠色廊道超級美，是台糖舊鐵道，在這邊拍了好多照，開啟玩樂的一天<br>
+						-舊西螺大橋好壯觀，宮廟的旗幟飄揚，因為大甲媽祖過幾天要遶境了，很有氛圍<br>
+						-才發現自己到雲林了！<br>
+						-然後到嘉義了！<br>
+						-老榜赫然發現眼前的星巴克，是稱號全台最美星巴克，著名的解任務點，所以我們也解任務了<br>
+						-在星巴克休息時，有個一歲八個月的小男生跑來盯著澎看，後來和他爸爸聊天，他們是出來開車環島的耶（擊掌✋）<br>
+						-進入嘉義市也偏好走小路<br>
+						-然後就愉快的去吃吃喝喝囉<br>
+						-今天提早打烊<br>
+
+						-我們今天都走在人家的老家後面、水稻、菜園、蔥、韭菜、高麗菜、鳳梨、豬舍、雞舍的小路上<br>
+						-真的是很厲害的小路串接，特地附地圖噢<br>
+						-在彰化遇到好多聲音鐘噢～超懷舊！賣苦瓜、修繕你家各種門窗櫃欄什麼的！<br>
+						-然後聞到泡麵香和飲料味發現是味王工廠<br>
+						-還經過霹靂布袋戲<br>
+						-比起前兩天在西濱看到的重工、塑化、化學大廠，這些好親切喔<br>
+						-天氣好好，邊騎邊玩<br>
+						-老闆環台第五天背影從O變Y，甚感滿意，於是手滑拍了一堆背影啊哈哈哈哈哈哈<br>
+						-照片數量太多了，IG就放影片吧<br>
+
+						-看到了好多殘破的老家，那麼美的房子，那麼破損，想起前陣子聽花蓮飛碟電台的花現193時，主持人清盛邀請《回家種田》的作者崇鳳聊書，談到面對老家的心情、家族面對老家的狀態，大部分人是選擇不處理的，因為很難碰觸、不被碰觸，聽的時候就很有感受，這幾天從苗栗、彰化、雲林、嘉義都看到好多的老家，極少數尚有人在，大部分放著破敗，更有感覺，謝謝花現193，回去一定要好好的看看《回家種田》讓這趟旅程更完整。<br>
+
+						-祈禱在週日春雨來之前都好天氣
+
+
+					</p>
+					<div class="box alt">
+						<div class="row uniform">
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30657243_798088103719268_1920571089157371207_n.jpg?_nc_cat=0&oh=eec65740f6ce307069b4c95f5559d019&oe=5B53AF16" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30657243_798088103719268_1920571089157371207_n.jpg?_nc_cat=0&oh=eec65740f6ce307069b4c95f5559d019&oe=5B53AF16" alt="" />行人模式不能隨便用，因為它會帶你上山下海走田埂樓梯之類的
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30656488_798088093719269_2943435478609169235_n.jpg?_nc_cat=0&oh=96123a244aa49f748cff2a3bda4cca84&oe=5B8C4B86" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30656488_798088093719269_2943435478609169235_n.jpg?_nc_cat=0&oh=96123a244aa49f748cff2a3bda4cca84&oe=5B8C4B86" alt="" />超可愛的朋友沒辦法在台中相遇，也熱情推薦了好吃早餐～
+
+							</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30712251_798088130385932_1826868379911416808_n.jpg?_nc_cat=0&oh=892291d31ee5e70996be5cb11b60c1c4&oe=5B4EC4FC" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30712251_798088130385932_1826868379911416808_n.jpg?_nc_cat=0&oh=892291d31ee5e70996be5cb11b60c1c4&oe=5B4EC4FC" alt="" />彰化的稻田
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30629152_798088150385930_3235011669367828476_n.jpg?_nc_cat=0&oh=b1176903ba5a913172ede421b802c4e8&oe=5B95A102" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30629152_798088150385930_3235011669367828476_n.jpg?_nc_cat=0&oh=b1176903ba5a913172ede421b802c4e8&oe=5B95A102" alt="" />無敵小路，那個綠樹成蔭包圍了自行車道啊，太棒了
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30688777_798088200385925_5911241212677331618_n.jpg?_nc_cat=0&oh=33812d0cd14e2e7ed3297eac66ae8ab1&oe=5B8A4849" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30688777_798088200385925_5911241212677331618_n.jpg?_nc_cat=0&oh=33812d0cd14e2e7ed3297eac66ae8ab1&oe=5B8A4849" alt="" />永樂社區的社區地圖，立體的，聲音鐘從旁邊開過去～
+
+							</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29872505_798088180385927_6101884175590327550_o.jpg?_nc_cat=0&oh=cacacaf41d0673add56b4f5a0f15ac62&oe=5B9569D6" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29872505_798088180385927_6101884175590327550_o.jpg?_nc_cat=0&oh=cacacaf41d0673add56b4f5a0f15ac62&oe=5B9569D6" alt="" />那個樹真的長得真好，行人模式太棒了
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29983300_798088237052588_3768324441521010690_o.jpg?_nc_cat=0&oh=39a308facdf8e0d87c00388e9f04be95&oe=5B866353" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29983300_798088237052588_3768324441521010690_o.jpg?_nc_cat=0&oh=39a308facdf8e0d87c00388e9f04be95&oe=5B866353" alt="" />走到村庄裡面
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30656836_798088277052584_2082047516749611823_n.jpg?_nc_cat=0&oh=b8d51932c9fa27170b13a11e41c71a68&oe=5B909426" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30656836_798088277052584_2082047516749611823_n.jpg?_nc_cat=0&oh=b8d51932c9fa27170b13a11e41c71a68&oe=5B909426" alt="" />通往光明
+
+							</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30629514_798088310385914_4358188015907985544_n.jpg?_nc_cat=0&oh=60b951cf4d2b2755b485ab78a78160db&oe=5B91DBA2" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30629514_798088310385914_4358188015907985544_n.jpg?_nc_cat=0&oh=60b951cf4d2b2755b485ab78a78160db&oe=5B91DBA2" alt="" />到處都是好美的老家～
+古早人身高是都不高嗎？門窗為什麼這麼低矮呢～？
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30707326_798088347052577_5370573437842400199_n.jpg?_nc_cat=0&oh=0ece23d8c247a86e130495e9f64a9d11&oe=5B52F04D" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30707326_798088347052577_5370573437842400199_n.jpg?_nc_cat=0&oh=0ece23d8c247a86e130495e9f64a9d11&oe=5B52F04D" alt="" />西部金城武樹
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30688706_798088357052576_7148890849137478067_n.jpg?_nc_cat=0&oh=0ea8a237a4108eb9ee777079ff3768ce&oe=5B4ED7B8" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30688706_798088357052576_7148890849137478067_n.jpg?_nc_cat=0&oh=0ea8a237a4108eb9ee777079ff3768ce&oe=5B4ED7B8" alt="" />行人模式又帶我們彎進神奇的路
+
+							</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30653094_798088393719239_7340025635886713945_n.jpg?_nc_cat=0&oh=6346e8d17a60c319e38151467ac68b93&oe=5B52E7BB" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30653094_798088393719239_7340025635886713945_n.jpg?_nc_cat=0&oh=6346e8d17a60c319e38151467ac68b93&oe=5B52E7BB" alt="" />走慣了無人小路，在路上看到人車的時候會感到驚訝😂
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30652913_798088407052571_8820482502168462974_n.jpg?_nc_cat=0&oh=31fac673324cfefde2eda1e1dea560ea&oe=5B9B25E2" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30652913_798088407052571_8820482502168462974_n.jpg?_nc_cat=0&oh=31fac673324cfefde2eda1e1dea560ea&oe=5B9B25E2" alt="" />有一段經過森林
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30629230_798088453719233_566943427510237486_n.jpg?_nc_cat=0&oh=83484d9bda60747289826d80d5de0911&oe=5B9BC2DB" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30629230_798088453719233_566943427510237486_n.jpg?_nc_cat=0&oh=83484d9bda60747289826d80d5de0911&oe=5B9BC2DB" alt="" />又是美麗的自行車道，一旁鬼針草的花開得太美了
+
+							</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30623657_798088507052561_816962919634769324_n.jpg?_nc_cat=0&oh=2869d3c6fa329c6fd94ffb9c0930c9be&oe=5B524F4F" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30623657_798088507052561_816962919634769324_n.jpg?_nc_cat=0&oh=2869d3c6fa329c6fd94ffb9c0930c9be&oe=5B524F4F" alt="" />舊西螺大橋，站在這裡都彷彿聞到香火味
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29872905_798088540385891_2746771588783347116_o.jpg?_nc_cat=0&oh=f579112733c75cc3d47bdc74fd97447c&oe=5B86B3C4" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29872905_798088540385891_2746771588783347116_o.jpg?_nc_cat=0&oh=f579112733c75cc3d47bdc74fd97447c&oe=5B86B3C4" alt="" />很長⋯風很大⋯
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29872937_798088577052554_5208853273414623581_o.jpg?_nc_cat=0&oh=574f112b50acc67be55b5fcc417e1e5d&oe=5B7E7B3F" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29872937_798088577052554_5208853273414623581_o.jpg?_nc_cat=0&oh=574f112b50acc67be55b5fcc417e1e5d&oe=5B7E7B3F" alt="" />彰化
+							</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30629711_798088590385886_7032592672390546115_n.jpg?_nc_cat=0&oh=1d368dba24ec31df5f664877da33de01&oe=5B84739B" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30629711_798088590385886_7032592672390546115_n.jpg?_nc_cat=0&oh=1d368dba24ec31df5f664877da33de01&oe=5B84739B" alt="" />
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/30073401_798088623719216_85635627321084387_o.jpg?_nc_cat=0&oh=5f3b67a37aa3c4be739c21db6d0ab97e&oe=5B8F92D1" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/30073401_798088623719216_85635627321084387_o.jpg?_nc_cat=0&oh=5f3b67a37aa3c4be739c21db6d0ab97e&oe=5B8F92D1" alt="" />霹靂布袋戲在這！
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29982915_798088687052543_4443639538540046810_o.jpg?_nc_cat=0&oh=1748042e48909e4e24cb3df9e9934eec&oe=5B7E6246" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29982915_798088687052543_4443639538540046810_o.jpg?_nc_cat=0&oh=1748042e48909e4e24cb3df9e9934eec&oe=5B7E6246" alt="" />雲林
+
+							</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29983759_798088757052536_4084057789301376799_o.jpg?_nc_cat=0&oh=63545afeb7637bd2ae75e274c0083706&oe=5B80C4EB" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29983759_798088757052536_4084057789301376799_o.jpg?_nc_cat=0&oh=63545afeb7637bd2ae75e274c0083706&oe=5B80C4EB" alt="" />一直聞到泡麵味飲料味，循著味道轉頭才發現⋯味王啊
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/30051771_798088800385865_6590756867475386738_o.jpg?_nc_cat=0&oh=ee2eb4fb2cacffc33d8f4fa3f1f2f662&oe=5B7CD935" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/30051771_798088800385865_6590756867475386738_o.jpg?_nc_cat=0&oh=ee2eb4fb2cacffc33d8f4fa3f1f2f662&oe=5B7CD935" alt="" />嘉義
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/30073151_798088790385866_1334345756048442716_o.jpg?_nc_cat=0&oh=788633aa4b4c4df5a52453f56da7af21&oe=5B8BA347" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/30073151_798088790385866_1334345756048442716_o.jpg?_nc_cat=0&oh=788633aa4b4c4df5a52453f56da7af21&oe=5B8BA347" alt="" />休息時間～你們倆是否拿反了東西啊
+
+							</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/30167188_798088867052525_5187731593694226104_o.jpg?_nc_cat=0&oh=5514a27f97b87ff5903ad74c6d8b3f74&oe=5B53BBD1" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/30167188_798088867052525_5187731593694226104_o.jpg?_nc_cat=0&oh=5514a27f97b87ff5903ad74c6d8b3f74&oe=5B53BBD1" alt="" />又是夕陽
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/30167771_798088877052524_894630427497197584_o.jpg?_nc_cat=0&oh=1e913f672b2832bd6308fe2bc8839fe3&oe=5B9C3147" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/30167771_798088877052524_894630427497197584_o.jpg?_nc_cat=0&oh=1e913f672b2832bd6308fe2bc8839fe3&oe=5B9C3147" alt="" />又是小路
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30688744_798091947052217_1983230276148119270_n.jpg?_nc_cat=0&oh=2bcb0ba829c96014c25f4da75a849ba2&oe=5B8AB7D5" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30688744_798091947052217_1983230276148119270_n.jpg?_nc_cat=0&oh=2bcb0ba829c96014c25f4da75a849ba2&oe=5B8AB7D5" alt="" />完全沒走在公路上的Day5
+
+							</span></a></div>
+
+							
+
+						</div>
+					</div>
+				</article>
+
+				<article class="post">
+					<header>
+						<div class="title">
+							<h2><a href="https://www.facebook.com/haohouse1939/posts/798606740334071" target="_blank">環島 Day6</a></h2>
+							<p>嘉義 -> 赤崁樓</p>
+						</div>
+						<div class="meta">
+							<time class="published" datetime="2015-11-01">April 13, 2018</time>
+							<a href="https://www.facebook.com/haohouse1939/posts/798606740334071" target="_blank" class="author"><span class="name">書榜、美保、澎吧</span><img src="images/avatar.jpg" alt="" /></a>
+						</div>
+					</header>
+					<p>
+						10:00嘉義市-google map行人模式-台南赤崁樓16:50<br>
+
+						68.6km 7hr (含休息用餐躲太陽）<br>
+
+						以下流水帳<br>
+
+						-昨晚整理了一包不需要的行李，今早在出發前去超商先寄回花蓮<br>
+						-熱<br>
+						-熱<br>
+						-熱<br>
+						-超級大逆風，拿出指南針往頭前熱風來的方向一看，正 南 風 ！<br>
+						-嘉義往台南明明是下坡！長長的下坡，我卻一點也感覺不到⋯<br>
+						-抬頭沒有一片雲，遠方有。遠方有雲沒用啊😂<br>
+						-沿路無遮陰<br>
+						-我又再次重新認識了自己⋯會毀滅我的，不是側風也不是逆風，是太陽和高溫<br>
+						-熱到厭世<br>
+						-過了麻豆一大片文旦柚果園，在曾文溪畔，午餐過後的一整路都沒有任何補給站，由於擔心澎澎曬太陽（雖然她看起來很好），加上我的體感像在沙漠裡，就發起脾氣，在一棵大龍眼樹下，停車，坐在路邊，生氣的說：我不騎了！<br>
+						-對著空氣說的，因為老榜距離我超前有50公尺吧<br>
+						-還好他知道我一定會靠北，還記得折返回來陪我發脾氣<br>
+						-他說，我們只剩17公里而已⋯⋯<br>
+						-真的太熱太曬了，正南風=正逆風=正熱風啊<br>
+						-一家三口坐在馬路邊龍眼樹下吹南風半小時後，老榜台南的表哥1來了一個訊息說在民宿已經寄放了要給我們的豆花和紅茶，正在櫃檯冰著。<br>
+						-聞訊，我乖乖起來騎車了，為了安平豆花、和有名紅茶（忘記哪家）<br>
+						-在距離台南市區9公里遠的周遭就已經熱鬧到不行，滿街小吃飲料一直誘惑我停車<br>
+						-終於到了表哥2幫訂的民宿，嗚嗚嗚太用心了在赤崁樓旁kokoni cafe斜對面，超～棒～的！<br>
+						-完全忘記一個半小時前自己還坐在路邊發脾氣。<br>
+						-接著就是吃吃喝喝美好的晚上，感謝表哥家人們的招待和疼惜，抱歉我們只停留一天，台南只停留一天真的不夠啊啊啊<br>
+					</p>
+					<div class="box alt">
+						<div class="row uniform">
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30705382_798603420334403_1141690872008152782_n.jpg?_nc_cat=0&oh=0b611f26e2ab5c5e293babb2f76997e1&oe=5B815672" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30705382_798603420334403_1141690872008152782_n.jpg?_nc_cat=0&oh=0b611f26e2ab5c5e293babb2f76997e1&oe=5B815672" alt="" />美嗎？熱斃了 -麻豆
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30656245_798603423667736_186853047297581953_n.jpg?_nc_cat=0&oh=f8d16e54c0dc8d0117d62f51e6871efc&oe=5B850842" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30656245_798603423667736_186853047297581953_n.jpg?_nc_cat=0&oh=f8d16e54c0dc8d0117d62f51e6871efc&oe=5B850842" alt="" />一片祥和嗎？超熱的 -曾文溪
+
+							</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30710567_798603480334397_8913858840295723094_n.jpg?_nc_cat=0&oh=585ec5669c170849fa9d52dc7d05bbe1&oe=5B7DE41E" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30710567_798603480334397_8913858840295723094_n.jpg?_nc_cat=0&oh=585ec5669c170849fa9d52dc7d05bbe1&oe=5B7DE41E" alt="" />陽光都是金黃色的⋯同時也代表了高溫（其實也沒很高欸現在才幾月妳就受不了了）-麻豆文旦園
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30697833_798603497001062_5485565924402672504_n.jpg?_nc_cat=0&oh=0d76e5ad558699b05160a32d15720489&oe=5B7F87F4" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30697833_798603497001062_5485565924402672504_n.jpg?_nc_cat=0&oh=0d76e5ad558699b05160a32d15720489&oe=5B7F87F4" alt="" />老榜越騎越遠 -麻豆
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30726461_798603550334390_3513522857164021999_n.jpg?_nc_cat=0&oh=373fef62f77e73853334c3937287d270&oe=5B937F78" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30726461_798603550334390_3513522857164021999_n.jpg?_nc_cat=0&oh=373fef62f77e73853334c3937287d270&oe=5B937F78" alt="" />熱啊⋯⋯ -曾文溪北岸
+
+							</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29982940_798603533667725_3664648143228816569_o.jpg?_nc_cat=0&oh=b56e623b201e55bf59abe1354e1eac4f&oe=5B88A894" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/29982940_798603533667725_3664648143228816569_o.jpg?_nc_cat=0&oh=b56e623b201e55bf59abe1354e1eac4f&oe=5B88A894" alt="" />老榜在哪裡？他一點都不受溫度影響 -往曾文溪北岸
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30688263_798603610334384_7349874052253256422_n.jpg?_nc_cat=0&oh=285648cabf5f5d6148949509a6cdb2cd&oe=5B9BB6FD" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30688263_798603610334384_7349874052253256422_n.jpg?_nc_cat=0&oh=285648cabf5f5d6148949509a6cdb2cd&oe=5B9BB6FD" alt="" />這裡的稻已經長得這麼高了，從北看下來，越南越高。果然是氣候啊（不要跟我說一眠大一寸）-新營
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30657055_798603607001051_8307582554524251570_n.jpg?_nc_cat=0&oh=ae231618dc63dfa458b782ebad812a5c&oe=5B907818" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30657055_798603607001051_8307582554524251570_n.jpg?_nc_cat=0&oh=ae231618dc63dfa458b782ebad812a5c&oe=5B907818" alt="" />嘉義水上的北回歸線⋯是說我才剛過瑞穗的意思嗎？
+（拍的時候還很開心，殊不知過了這個還真的全面感受進入熱帶氣候熱到沒心情多拍什麼）
+
+							</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30710873_798603663667712_2340313336266161153_n.jpg?_nc_cat=0&oh=2916ef460e8d4a74d158195d4364a32c&oe=5B9340E0" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30710873_798603663667712_2340313336266161153_n.jpg?_nc_cat=0&oh=2916ef460e8d4a74d158195d4364a32c&oe=5B9340E0" alt="" />減輕負重，一些行李先回花蓮囉 -嘉義市
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30707178_798603660334379_7194456084269492694_n.jpg?_nc_cat=0&oh=ab05d4c99eb65c9ef57f24d478afe2e7&oe=5B8964DD" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30707178_798603660334379_7194456084269492694_n.jpg?_nc_cat=0&oh=ab05d4c99eb65c9ef57f24d478afe2e7&oe=5B8964DD" alt="" />哇，我愛這裡 -赤崁樓旁
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30708839_798603703667708_5697273473785602695_n.jpg?_nc_cat=0&oh=4e62e0f91f9d5d3bee2b03c9b1b699d0&oe=5B857F22" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30708839_798603703667708_5697273473785602695_n.jpg?_nc_cat=0&oh=4e62e0f91f9d5d3bee2b03c9b1b699d0&oe=5B857F22" alt="" />一個晚上真的好短噢 -赤崁樓
+
+							</span></a></div>
+
+							
+
+						</div>
+					</div>
+				</article>
+
+				<article class="post">
+					<header>
+						<div class="title">
+							<h2><a href="https://www.facebook.com/haohouse1939/posts/799026650292080" target="_blank">環島 Day7</a></h2>
+							<p>赤崁樓 -> 新左營</p>
+						</div>
+						<div class="meta">
+							<time class="published" datetime="2015-11-01">April 14, 2018</time>
+							<a href="https://www.facebook.com/haohouse1939/posts/799026650292080" target="_blank" class="author"><span class="name">書榜、美保、澎吧</span><img src="images/avatar.jpg" alt="" /></a>
+						</div>
+					</header>
+					<p>
+						9:30赤崁樓-台1-新左營15:00<br>
+
+						48.7km 5.5hr (含用餐與避正午太陽3小時）<br>
+
+						-高雄是我們很熟悉的地方<br>
+						-有了昨天的經驗，今天預計11點前到岡山，在岡山拜訪親友長輩們，順便避開正午的太陽<br>
+						-早上出門時台南涼涼的很舒服，所以前進得很順暢<br>
+						-赤崁樓出發沿著台1就騎到了奇美博物館<br>
+						-過了奇美再過個橋就到高雄了，好近啊！<br>
+						-到了高雄就是一場麻將了，很多輩份高的親友盤據在這，隨時都有被攔胡的可能<br>
+						-正午的太陽開始熱，我們一一拜訪了長輩們，參觀了朋友好美的家，澎玩得超開心，還吃了每次回來岡山都會被帶去吃的岡山羊肉<br>
+						-一路玩到兩點多，出發去新左營再度拜訪親戚<br>
+						-然後就被攔胡了🤣，今日打烊<br>
+
+						-明日預計要騎的南迴壽卡，天氣預報資訊十分不確定到底會如何，而一但往壽卡，是沒得回頭的。帶著小孩，若不是確定安穩的天候，我們就不會冒險去走。<br>
+						-再加上好多家人的關心提醒，還有兩鐵列車班次時間的因素下，我們今天就在新左營親戚家好好休息，明天將搭火車至太麻里，繼續往北。<br>
+						-請大家不要擔心噢！<br>
+
+						-看著整個下午和哥哥姐姐玩在一起的澎，他們上次相聚，澎一歲呢！想想，今天雖然很早打烊，但一切安排都是美好。<br>
+						-屏東的美好，就留待火車上欣賞了，謝謝你們的熱情歡迎❤️，我們下次再去。
+
+
+					</p>
+					<div class="box alt">
+						<div class="row uniform">
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30705577_799022933625785_8355478699001105689_n.jpg?_nc_cat=0&oh=7b0a4338d557fffec3c694b6b6422a48&oe=5B8C7A9F" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30705577_799022933625785_8355478699001105689_n.jpg?_nc_cat=0&oh=7b0a4338d557fffec3c694b6b6422a48&oe=5B8C7A9F" alt="" />上次我來奇美博物館，澎在肚子裡，才三個月
+現在再來，她已經快三歲了😚
+
+幫拍照的車友說：我以為你們是日本人。
+我說：不，他只是邋遢。
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30698601_799022956959116_3294965781993930302_n.jpg?_nc_cat=0&oh=8cef22cccf1855bf0293980ab1f99e42&oe=5B885EB5" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30698601_799022956959116_3294965781993930302_n.jpg?_nc_cat=0&oh=8cef22cccf1855bf0293980ab1f99e42&oe=5B885EB5" alt="" />南部的陽光是金黃色的
+
+							</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30708044_799023016959110_6951051885967989289_n.jpg?_nc_cat=0&oh=066f5d1836f27119a61f322b22f792c0&oe=5B5163CE" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30708044_799023016959110_6951051885967989289_n.jpg?_nc_cat=0&oh=066f5d1836f27119a61f322b22f792c0&oe=5B5163CE" alt="" />
+從赤崁樓出發奇美博物館好近喔！
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30708310_799023026959109_4723792353566024003_n.jpg?_nc_cat=0&oh=1096a7be28c08e9e5a4cad9bb7febfd9&oe=5B8CE436" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30708310_799023026959109_4723792353566024003_n.jpg?_nc_cat=0&oh=1096a7be28c08e9e5a4cad9bb7febfd9&oe=5B8CE436" alt="" />下橋就是高雄市
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30739953_799023053625773_2211520596004727489_n.jpg?_nc_cat=0&oh=1bca4543f2647becd9d9e817cb1f4336&oe=5B9A1801" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30739953_799023053625773_2211520596004727489_n.jpg?_nc_cat=0&oh=1bca4543f2647becd9d9e817cb1f4336&oe=5B9A1801" alt="" />參觀朋友岡山美屋
+
+							</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30705257_799023063625772_647189275736043831_n.jpg?_nc_cat=0&oh=3ad3000c874675d020d689a6bbc8c635&oe=5B9AEA21" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30705257_799023063625772_647189275736043831_n.jpg?_nc_cat=0&oh=3ad3000c874675d020d689a6bbc8c635&oe=5B9AEA21" alt="" />又見到陳阿公陳阿嬤了，謝謝您們的照顧
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30703844_799023120292433_9064307021081594856_n.jpg?_nc_cat=0&oh=39b00133263dd03fd39d670283ddd9fa&oe=5B4FD76F" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30703844_799023120292433_9064307021081594856_n.jpg?_nc_cat=0&oh=39b00133263dd03fd39d670283ddd9fa&oe=5B4FD76F" alt="" />這是朋友家廁所燈！！
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30709087_799023123625766_4291612083277545467_n.jpg?_nc_cat=0&oh=3bb5f3f1dcbbaf2941dd57b61f99c038&oe=5B8EB5FB" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30709087_799023123625766_4291612083277545467_n.jpg?_nc_cat=0&oh=3bb5f3f1dcbbaf2941dd57b61f99c038&oe=5B8EB5FB" alt="" />澎澎拜訪姑婆，但她想這樣照相
+
+							</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/30171237_799023170292428_2531789490058700425_o.jpg?_nc_cat=0&oh=2afe833f08a80d0f76fafb5329235024&oe=5B5353D9" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t31.0-8/30171237_799023170292428_2531789490058700425_o.jpg?_nc_cat=0&oh=2afe833f08a80d0f76fafb5329235024&oe=5B5353D9" alt="" />孩子們心思互通，不需要大人插手，美好的時光
+
+							</span></a></div>
+
+						</div>
+					</div>
+				</article>
+
+				<article class="post">
+					<header>
+						<div class="title">
+							<h2><a href="https://www.facebook.com/haohouse1939/posts/799547486906663" target="_blank">環島 Day8</a></h2>
+							<p>新左營 -> 池上</p>
+						</div>
+						<div class="meta">
+							<time class="published" datetime="2015-11-01">April 15, 2018</time>
+							<a href="https://www.facebook.com/haohouse1939/posts/799547486906663" target="_blank" class="author"><span class="name">書榜、美保、澎吧</span><img src="images/avatar.jpg" alt="" /></a>
+						</div>
+					</header>
+					<p>
+						6:16-9:13 新左營-太麻里 兩鐵列車<br>
+						9:40太麻里火車站-臺9-池上18:00<br>
+
+						74.5km 8.4hr (含休息用餐）<br>
+
+						-早上五點起床，要搭六點多的兩鐵列車<br>
+						-列車上遇到一位車友阿北，他在昨天刮南風的時候從車城騎到太麻里，然後搭區間車回家；今天刮起強北風他搭一天僅一班的兩鐵列車要去太麻里騎回屏東<br>
+						-原來北北都這樣騎啊～<br>
+						-好多人從高雄搭去金崙，為了泡一天的溫泉再回家<br>
+						-原來是這樣泡啊～<br>
+						-澎一路唱歌，唱著唱著我們終於到太麻里下車<br>
+						-到了台東，就有回家了的感覺，我的心成了歸心<br>
+						-空氣濕度氣味和前幾天完全不一樣，卻是很熟悉的，讓人忍不住深深呼吸<br>
+						-強北風，明明是騎下坡，車子卻不會滑，得一腳一腳的踩，檔位已是最輕，踩起來卻超重<br>
+						-太麻里、知本、卑南、初鹿、鹿野，是一整串的長上坡<br>
+						-但因為地勢較高、主要作物產茶，鹿野的空氣真的非常清新，和其他地方都不一樣<br>
+						-鹿野熱情的朋友們攔截成功！謝謝您們😘<br>
+						-明明和前幾天一樣騎省道，但今天的省道騎起來是其他地區單車道的感覺。沒有工業沒有太多大車<br>
+						-被一台像油罐車或是化學氣槽的超級大車刷卡，它，載的是「生乳」！！<br>
+						-像游泳池一樣多的生乳從我旁邊開過去了啊啊啊啊啊，這就是東部省道～<br>
+						-池上稻田撫慰了逆風的疲勞，風從上面滑過，送來陣陣稻葉香，灌溉水渠清澈，有時還能見小魚<br>
+						-午後陣雨<br>
+						-我們終於把準備許久的雨備拿出，還好有用到，沒白帶了。<br>
+						-最開心的是澎澎，穿新雨衣<br>
+						-這趟環島淋雨也是遇到了😂<br>
+						-在嘉義寄店到店的行李今天到花蓮囉<br>
+						-抵達池上<br>
+
+						-老榜為了玉里臭豆腐想把終點拉至玉里，但還好沒有，我們今天可是五點就起床了，別高估自己的體力😭<br>
+
+						-回家了，一切美景都在催促著我回家。<br>
+						-南下刮南風北上刮北風烈日冷雨都沒放過😝
+					</p>
+					<div class="box alt">
+						<div class="row uniform">
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30716143_799545150240230_9171352025027443037_n.jpg?_nc_cat=0&oh=0465806a4667942c9dc28347d5bf74a5&oe=5B801DF2" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30716143_799545150240230_9171352025027443037_n.jpg?_nc_cat=0&oh=0465806a4667942c9dc28347d5bf74a5&oe=5B801DF2" alt="" />
+東部的溪都是季節性的乾溪
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30726519_799545160240229_4686834769572407386_n.jpg?_nc_cat=0&oh=21b180a125c67e8ee62a3c1f88e2f5c2&oe=5B7D07C2" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30726519_799545160240229_4686834769572407386_n.jpg?_nc_cat=0&oh=21b180a125c67e8ee62a3c1f88e2f5c2&oe=5B7D07C2" alt="" />太麻里喲，我好愛～
+							</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30727907_799545193573559_907922150701995265_n.jpg?_nc_cat=0&oh=28ce890de4a7e8ecf9d27a12808690be&oe=5B9C806E" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30727907_799545193573559_907922150701995265_n.jpg?_nc_cat=0&oh=28ce890de4a7e8ecf9d27a12808690be&oe=5B9C806E" alt="" />這是一整片的鐵樹林⋯鐵樹耶⋯⋯⋯
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30729958_799545203573558_968314478210296266_n.jpg?_nc_cat=0&oh=c4fbbc701457e5d9ea80e22427cbdcb4&oe=5B968A82" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30729958_799545203573558_968314478210296266_n.jpg?_nc_cat=0&oh=c4fbbc701457e5d9ea80e22427cbdcb4&oe=5B968A82" alt="" />一邊騎一邊脫口罩大口呼吸
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30725671_799545226906889_7730935910318330921_n.jpg?_nc_cat=0&oh=2a51f467908b0ad1d6ba09ff3638d834&oe=5B873C81" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30725671_799545226906889_7730935910318330921_n.jpg?_nc_cat=0&oh=2a51f467908b0ad1d6ba09ff3638d834&oe=5B873C81" alt="" />太麻里車站我們又來了，這次騎單車喲
+
+							</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30714450_799545240240221_5504915454341119726_n.jpg?_nc_cat=0&oh=8360dfd7d5eeabd4e737f4cb2ffdb2a4&oe=5B8DC2A5" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30714450_799545240240221_5504915454341119726_n.jpg?_nc_cat=0&oh=8360dfd7d5eeabd4e737f4cb2ffdb2a4&oe=5B8DC2A5" alt="" />沿途的甘蔗玉米甘蔗汁太誘人了⋯但！就算你散步都可以追上我，我也不能停下來
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30711051_799545276906884_8691410731406132376_n.jpg?_nc_cat=0&oh=32de42f160cfeafb46c1d8ded343f817&oe=5B53092A" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30711051_799545276906884_8691410731406132376_n.jpg?_nc_cat=0&oh=32de42f160cfeafb46c1d8ded343f817&oe=5B53092A" alt="" />熟悉的山
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30712602_799545290240216_2523650992969982296_n.jpg?_nc_cat=0&oh=e022c24d3894622a1628bed819c6a1d2&oe=5B81DF24" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30712602_799545290240216_2523650992969982296_n.jpg?_nc_cat=0&oh=e022c24d3894622a1628bed819c6a1d2&oe=5B81DF24" alt="" />無意中已關閉觀光客模式的我們。
+
+							</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30713720_799550433573035_1846789080736589148_n.jpg?_nc_cat=0&oh=9ecdf6cbb9c41a1a5203dd9321cceb15&oe=5B8F577E" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30713720_799550433573035_1846789080736589148_n.jpg?_nc_cat=0&oh=9ecdf6cbb9c41a1a5203dd9321cceb15&oe=5B8F577E" alt="" />超乾淨觀景窗的兩鐵列車
+
+							</span></a></div>
+
+						</div>
+					</div>
+				</article>
+
+				<article class="post">
+					<header>
+						<div class="title">
+							<h2><a href="https://www.facebook.com/haohouse1939/videos/799930003535078/" target="_blank">環島 Day9</a></h2>
+							<p>池上 -> 瑞穗</p>
+						</div>
+						<div class="meta">
+							<time class="published" datetime="2015-11-01">April 16, 2018</time>
+							<a href="https://www.facebook.com/haohouse1939/videos/799930003535078/" target="_blank" class="author"><span class="name">書榜、美保、澎吧</span><img src="images/avatar.jpg" alt="" /></a>
+						</div>
+					</header>
+					<p>
+						10:30池上伯朗大道-池上環鄉自行車道-台9-玉富自行車道-193縣道-瑞穗火車站16:00<br>
+
+						55km 5.5hr （含休息用餐）<br>
+
+						-早起的池上太美，耽誤了出發時間<br>
+						-我們的懸念是大池豆皮店的豆皮，澎澎則是福原豆腐店的豆花，花了點時間去踩點<br>
+						-撲空過三次的豆皮終於吃到，好好吃，吃得到植物蛋白質的味道～<br>
+						-豆花一樣深得澎歡心<br>
+						-逆風上路！<br>
+						-省道公路上的風總是特別大<br>
+						-但在池上富里玉里當然選擇自行車道+193縣道<br>
+						-如果沒有要挑戰舞鶴台地，193縣道玉里至瑞穗是非常棒的選擇，上上下下一路滑行到瑞穗，順暢得縮短了至少半小時的騎行時間，沿途稻田台地景緻美不勝收，路樹連綿成蔭十分享受<br>
+						-在193巧遇行動郵車❤️<br>
+						-無雨，真幸運<br>
+
+						-193縣道大推！<br>
+						-覺得自己變瘦壓縮車褲變好穿，但其實應該是每天穿都快穿壞了啦🤣<br>
+						-明天就要回家了，回家第一件事是什麼呢？天下的主婦都會想要先大掃除大洗衣吧<br>
+						-那是另一場修煉<br>
+
+						-今天僅以一段騎行池上風聲超大的影片表達這趟環島我們無敵逆風的狀態（記得HD看綠油油的稻田）<br>
+						-更多縱谷風光晚點在IG喲
+					</p>
+					<div class="googlemap">
+					<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fhaohouse1939%2Fvideos%2F799930003535078%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+					</div>
+					<div class="box alt">
+						<div class="row uniform">
+							<div class="4u"><span class="image fit"><a href="" target="_blank" class="image featured"><img src="" alt="" />
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="" target="_blank" class="image featured"><img src="" alt="" />
+							</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="" target="_blank" class="image featured"><img src="" alt="" />
+							</span></a></div>
+
+						</div>
+					</div>
+				</article>
+
+				<article class="post">
+					<header>
+						<div class="title">
+							<h2><a href="https://www.facebook.com/haohouse1939/posts/800542210140524" target="_blank">環島 Day10 END</a></h2>
+							<p>瑞穗 -> 花蓮好書室</p>
+						</div>
+						<div class="meta">
+							<time class="published" datetime="2015-11-01">April 17, 2018</time>
+							<a href="https://www.facebook.com/haohouse1939/posts/800542210140524" target="_blank" class="author"><span class="name">書榜、美保、澎吧</span><img src="images/avatar.jpg" alt="" /></a>
+						</div>
+					</header>
+					<a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30712945_800515180143227_11748215846244871_n.jpg?_nc_cat=0&oh=ef1915d9b5aa838a5155ca1e5f765119&oe=5B7CC175" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30712945_800515180143227_11748215846244871_n.jpg?_nc_cat=0&oh=ef1915d9b5aa838a5155ca1e5f765119&oe=5B7CC175" alt="" /></a>
+					<p>
+						9:00瑞穗火車站-台9-拉吉禾部落聯絡道路-新興路-大農大富南北自行車道-民治街-林田幹線-糖廠路-中山路二段-台9-壽豐路-台9-花蓮好書室16:00<br>
+
+						69.2km 7hr(含用餐休息）<br>
+
+						流水帳最終章：<br>
+
+						-台9線瑞穗至光復段拓寬施工，加上瑞穗有飯店在蓋，整段路空氣品質不佳、大車多，所以捨棄台9直接沿著東邊平行的部落道路騎<br>
+						-拉吉禾部落聯絡道路是意外的驚喜，非常好騎，遠遠可以望進台9，視野非常好！空氣新鮮蟲鳴鳥叫。<br>
+						-是爸爸去哪兒的拍攝地（到處都掛牌子寫著）<br>
+						-摘了兩朵小燈籠給澎<br>
+						-方便記憶的入口在：瑞穗台9北向約261公里處的中油加油站廁所門口😂<br>
+						-部落道路直接接上大農大富南北自行車道<br>
+						-澎認出地景是大農大富，非常開心地把上次來玩的過程跟我們全講一遍😭！<br>
+						-經過富源國中時，看得到已經凋謝的整排黃花風鈴木<br>
+						-往北走到大農大富自行車道盡頭往西過個橋再右轉就到光復糖廠<br>
+						-走光復市區直到必須上馬太鞍溪橋才回省道<br>
+						-在光復市區跟阿嬤買香腸（老榜第一天就想吃烤香腸，最後一天才吃到），阿嬤說他孫子也在單車環島呢！<br>
+						-萬里溪橋<br>
+						-豐平大橋<br>
+						-進壽豐市區，想到台東看見的滿街甘蔗，發現豐春冰室甘蔗冰果然開賣啦！<br>
+						-馬上吃一碗麥芽芋頭甘蔗冰，天然的，解身體的渴<br>
+						-木瓜溪橋<br>
+						-花蓮好書室<br>
+
+						-感受到自己level up ，縱谷往北好輕鬆啊～<br>
+						-青山綠野的，省道旁的替代方案從昨天的池上、富里、玉里、193縣道，到今天瑞穗的拉吉禾部落聯絡道路、光復的大農大富，都非常值得一騎，它們可以給你清新的空氣、飽滿的綠野、蟲鳴鳥叫，光只騎過一趟，還意猶未盡。<br>
+						-今天在光復和自家門前遇上綿綿綿綿細雨，其他地區都是舒適的陰天，最後一哩路劃下美好的句點。<br>
+
+						-天氣涼，一回家全家就先洗好泡浴缸<br>
+						-聞著雨味泡在熱水裡好幸福～<br>
+						-聽到轟隆轟隆聲馬上反應是有時速70以上的大卡車開過去了，但又瞬間意識到：「啊，是飛機啦！在好書室聽到的，不是卡車，是飛機✈️」<br>
+						-真的回家了～<br>
+
+						——<br>
+
+						因為是淑女車，才能載著孩子慢慢的騎<br>
+						淑女車的均速在時速12公里左右，所以我們的時間感在旅途中量化成距離，如果想著下個城市20公里，那麼就是兩小時後才會到，兩小時內如果需要吃、如廁、休息或是會天黑，都會改變我們是否繼續騎乘、尋找補給站或是開始搜尋投宿點。<br>
+						時間距離化是很有趣的體驗，也因此，要和我們短暫相聚半小時一小時不太容易（除非完全配合我們的休息時間），因為那對我們來說會是6公里到12公里的距離，是天亮變天黑的瞬間，時間距離都很長😭<br>
+
+						最後，環島不是年輕人專屬<br>
+						沿途看到環島的車友們，大多是中年老年<br>
+						大家載著車袋、穿著車衣，一起頂著風慢慢騎<br>
+						逆風上坡時又慢又吃力也無所謂，能讓自己的雙腳帶自己一路欣賞台灣熟悉卻陌生的風景才是此行的重點～<br>
+
+						台灣很美，各地有各地風景，沿途也引人思考深入的問題，最終回到家，都能獲得「珍惜」這個禮物🎁<br>
+
+						珍惜自己的窩<br>
+						珍惜台灣每一處認真生活的風景<br>
+						珍惜身邊的人，無私的互相幫助與關心<br>
+
+						沒有騎進去的縣市，將會是我們下次啟程的理由<br>
+						旅行路上，美好會發生。<br>
+
+						連續轟炸環島流水帳11天，粉專將回歸花蓮日常分享囉<br>
+						我們一家三口淑女車環島旅行成功😘<br>
+						謝謝大家一路的參與❤️<br>
+
+						晚安
+					</p>
+					<div class="box alt">
+						<div class="row uniform">
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30738969_800515190143226_7509938428819183129_n.jpg?_nc_cat=0&oh=46432f5b0930d0398a4e121916defbfc&oe=5B8FE0EF" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30738969_800515190143226_7509938428819183129_n.jpg?_nc_cat=0&oh=46432f5b0930d0398a4e121916defbfc&oe=5B8FE0EF" alt="" />摘燈籠給澎提著上路
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30715513_800515226809889_1116135562233150622_n.jpg?_nc_cat=0&oh=c4be278b6f8953f24e4156b6b21b11c0&oe=5B7C48BD" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30715513_800515226809889_1116135562233150622_n.jpg?_nc_cat=0&oh=c4be278b6f8953f24e4156b6b21b11c0&oe=5B7C48BD" alt="" />澎喜愛的大農大富
+							</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30714833_800515286809883_7425063774736430232_n.jpg?_nc_cat=0&oh=69a112bb0ce4174c09a538d5602ccba0&oe=5B7BC62B" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30714833_800515286809883_7425063774736430232_n.jpg?_nc_cat=0&oh=69a112bb0ce4174c09a538d5602ccba0&oe=5B7BC62B" alt="" />在大農大富騎單車超舒服
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30708458_800515320143213_3679749298430659749_n.jpg?_nc_cat=0&oh=f3bb3607753cc7b133aee20c6b39f61e&oe=5B82AA28" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30708458_800515320143213_3679749298430659749_n.jpg?_nc_cat=0&oh=f3bb3607753cc7b133aee20c6b39f61e&oe=5B82AA28" alt="" />休息吃喝囉，總司令願意下車嗎
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30724450_800515370143208_7931976521379437412_n.jpg?_nc_cat=0&oh=deaf7bd3ed079068f2d3c7e6d733c305&oe=5B93A83C" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30724450_800515370143208_7931976521379437412_n.jpg?_nc_cat=0&oh=deaf7bd3ed079068f2d3c7e6d733c305&oe=5B93A83C" alt="" />富源國中後面，也是台糖的地，台糖到處造林呢～
+
+							</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30741183_800515413476537_8337528570084883889_n.jpg?_nc_cat=0&oh=5a736721ba54c11284abde1795fd2592&oe=5B8C8F1F" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30741183_800515413476537_8337528570084883889_n.jpg?_nc_cat=0&oh=5a736721ba54c11284abde1795fd2592&oe=5B8C8F1F" alt="" />沒有雨，但懶得脫雨衣
+
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30741002_800515460143199_8633210335767632744_n.jpg?_nc_cat=0&oh=9e97a230bc0bb06933166a624ca402be&oe=5B8AF8A6" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30741002_800515460143199_8633210335767632744_n.jpg?_nc_cat=0&oh=9e97a230bc0bb06933166a624ca402be&oe=5B8AF8A6" alt="" />
+							</span></a></div>
+
+							<div class="4u"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30704282_800515533476525_8062802379575723973_n.jpg?_nc_cat=0&oh=b728168bf7306828fd65aa75e07149bd&oe=5B8158F2" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30704282_800515533476525_8062802379575723973_n.jpg?_nc_cat=0&oh=b728168bf7306828fd65aa75e07149bd&oe=5B8158F2" alt="" />台9轉往林田山腳，竟然出太陽～絕了這天氣
+
+							</span></a></div>
+
+							<div class="4u$"><span class="image fit"><a href="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30707522_800515536809858_3057678308061955552_n.jpg?_nc_cat=0&oh=bfb9d48e6a624cf06f65996d7ba2435f&oe=5B851B89" target="_blank" class="image featured"><img src="https://scontent.ftpe8-4.fna.fbcdn.net/v/t1.0-9/30707522_800515536809858_3057678308061955552_n.jpg?_nc_cat=0&oh=bfb9d48e6a624cf06f65996d7ba2435f&oe=5B851B89" alt="" />澎哭腔說：媽媽妳要騎那個好可愛的小自行車道
+
+							</span></a></div>
+
+						</div>
+					</div>
+				</article>
+
+
+			</div>
+			<!-- Sidebar -->
+			<section id="sidebar">
+				<!-- Intro -->
+				<section id="intro">
+					<a href="index.html" class="logo"><img src="images/logoImage.PNG" alt="花蓮好書室" /></a>
+				</section>
+				<!-- Mini Posts -->
+				<section>
+					<div class="mini-posts">
+						<!-- Mini Post -->
+						<article class="mini-post">
+							<header>
+								<h3><a href="single.html">單單</a></h3>
+								<p>一人一床，翻身不打擾</p>
+								<a href="single.html" class="author"><img src="images/single/single-sign.jpg" alt="屁股" /></a>
+							</header>
+							<a href="single.html" class="image"><img src="images/single/single-2.jpg" alt="極簡設計風格民宿房間" /></a>
+						</article>
+						<!-- Mini Post -->
+						<article class="mini-post">
+							<header>
+								<h3><a href="yore.html">昔時</a></h3>
+								<p>想起昔日，旅行時光</p>
+								<a href="yore.html" class="author"><img src="images/yore/yore-sign.jpg" alt="屁股" /></a>
+							</header>
+							<a href="yore.html" class="image"><img src="images/yore/yore-3.jpg" alt="極簡設計風格民宿房間" /></a>
+						</article>
+						<!-- Mini Post -->
+						<article class="mini-post">
+							<header>
+								<h3><a href="whiteWood.html">白木</a></h3>
+								<p>寧靜白色，沈靜木沐</p>
+								<a href="whiteWood.html" class="author"><img src="images/whiteWood/whiteWood-sign.jpg" alt="屁股" /></a>
+							</header>
+							<a href="whiteWood.html" class="image"><img src="images/whiteWood/whiteWood-1.jpg" alt="極簡設計風格民宿房間" /></a>
+						</article>
+						<!-- Mini Post -->
+						<article class="mini-post">
+							<header>
+								<h3><a href="days.html">日常</a></h3>
+								<p>四人齊聚，日常生活</p>
+								<a href="days.html" class="author"><img src="images/days/days-sign.jpg" alt="屁股" /></a>
+							</header>
+							<a href="days.html" class="image"><img src="images/days/days-1.jpg" alt="極簡設計風格民宿房間" /></a>
+						</article>
+						<!-- Mini Post -->
+						<article class="mini-post">
+							<header>
+								<h3><a href="days.html">好書室 全景</a></h3>
+								<p>探訪花蓮好書室</p>
+							</header>
+							<div class="googlemap">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1szh-TW!2stw!4v1488720192203!6m8!1m7!1sdJMpHMccy5cAAAQvxYMYLQ!2m2!1d23.98022430255352!2d121.5951780413628!3f300.15875738510874!4f-5.909474215633097!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div> 
+						</article>
+					</div>
+				</section>
+				
+				<!-- About -->
+				<section class="blurb">
+					<h2>關於好書室</h2>
+					<p>
+						旅行，是去他人的日常生活中，找到迷失的自己。<br>
+						好書室，在花蓮市遠東百貨旁的靜巷，準備了好床與寧靜的空間，做為基地，希望給你的旅程帶來靜心、自在與回歸。
+						<br>單純清透，好舒適，好放鬆。
+					</p>
+				</section>
+				<!-- Footer -->
+				<section id="footer">
+					<ul class="icons">
+						<li><a href="https://www.facebook.com/haohouse1939/" target="_blank" class="fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://instagram.com/haohouse1939" target="_blank" class="fa-instagram"><span class="label">Instagram</span></a></li>
+						<!-- <li><a href="mailto:haohouse1939@gmail.com" target="_blank" class="fa-envelope"><span class="label">Email</span></a></li> -->
+						<li><a href="tel:+886918624807" target="_blank" class="fa-phone"><span class="label">Mobile</span></a></li>
+						<li><a href="https://goo.gl/maps/R2X6fZ3AyWs" target="_blank" class="fa-map-marker"><span class="label">localtion</span></a></li>
+						<li><a href="https://line.me/R/ti/p/%40xho8040s" style="text-decoration: none;
+						border-bottom: none;" target="_blank"><img height="20" border="0" alt="加入好友" src="http://biz.line.naver.jp/line_business/img/btn/addfriends_zh-Hant.png" style="margin-bottom: -6px;"></a></li>
+					</ul>
+					<p class="copyright">&copy; 好書室. Design: <a href="https://www.facebook.com/profile.php?id=1795762028">Abel</a>. Images: <a href="https://www.instagram.com/ccabel42/?hl=zh-tw">Abel</a>.</p>
+				</section>
+			</section>
+		</div>
+		<!-- Scripts -->
+		<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
